@@ -12,6 +12,8 @@ appleskin-forge-mc1.16.x-2.4.0.jar
 Aquaculture-1.16.5-2.1.22.jar
 Architects-Palette-1.16.4-1.1.5.jar
 architectury-1.31.61.jar
+ars_creo-1.16.5-1.0.0.jar
+ars_elemental-1.16.5-0.1.6.3.jar
 ars_nouveau-1.16.5-1.25.0.jar
 Artifacts-1.16.5-2.10.5.jar
 astralsorcery-1.16-1.16.5-1.13.12.jar
@@ -19,6 +21,7 @@ atmospheric-1.16.5-3.1.1.jar
 Atum-1.16.5-2.2.11.jar
 AutoRegLib-1.6-49.jar
 autumnity-1.16.5-2.1.2.jar
+Babel-1.0.5.jar
 bdlib-1.17.1.11-mc1.16.5.jar
 betterendforge-1.16.5-1.6.3.jar
 biggerreactors-1.16.5-0.5.1.jar
@@ -36,6 +39,7 @@ chipped-1.16.5-1.2.1-forge.jar
 Chisel-MC1.16.5-2.0.1-alpha.4.jar
 chiselsandbits-1.0.63.jar
 citadel-1.8.1-1.16.5.jar
+cloth-config-4.14.64-forge.jar
 Clumps-6.0.0.28.jar
 cobblegenrandomizer-1.16-5.1.2.jar
 CodeChickenLib-1.16.5-4.0.7.445-universal.jar
@@ -49,6 +53,7 @@ connectedglass-1.1.3-mc1.16.jar
 constructionwand-1.16.5-2.6.jar
 Controlling-7.0.0.28.jar
 cookiecore-1.16.5-3.3.1-9c789ef.jar
+CosmeticArmorReworked-1.16.5-v5.jar
 CraftingTweaks_1.16.5-12.2.1.jar
 createaddition-1.16.5-20220129a.jar
 createdeco-1.1.2-1.16.5.jar
@@ -66,7 +71,7 @@ decorative_blocks_abnormals-1.2.jar
 deepresonance-1.16-2.0.5-beta.jar
 Ding-1.16.5-1.3.0.jar
 dpanvil-1.16.5-1.3.1.jar
-Draconic-Evolution-1.16.5-3.0.24.452-universal.jar
+Draconic-Evolution-1.16.5-3.0.25.456-universal.jar
 DungeonCrawl-1.16.5-2.3.8.jar
 DungeonsArise-1.16.5-2.1.49-beta.jar
 DustrialDecor-1.3.0.jar
@@ -77,11 +82,11 @@ EmendatusEnigmatica-1.2.15-build.7+mc1.16.5.jar
 EnchantmentDescriptions-1.16.5-7.0.19.jar
 enderchests-1.16-1.7.13.jar
 endergetic-1.16.5-3.0.2.jar
-EnderStorage-1.16.5-2.8.0.170-universal.jar
 endertanks-1.16-1.9.12.jar
 engineersdecor-1.16.5-1.1.18.jar
 ensorcellation-1.16.5-1.4.1.2.jar
 entangled-1.3.11-forge-mc1.16.jar
+entityculling-forge-mc1.16.5-1.5.2.jar
 envirocore-1.16.5-3.0.9.3.jar
 environmental-1.16.5-1.1.1.jar
 envirotech-1.16.5-3.0.9.4.jar
@@ -123,6 +128,7 @@ IronJetpacks-1.16.5-4.2.3.jar
 item-filters-forge-1605.2.5-build.9.jar
 jeed-1.16.5-1.6.jar
 jei-1.16.5-7.7.1.152.jar
+JEPB-1.0.0.jar
 jmi-1.16.5-0.8.1-47.jar
 journeymap-1.16.5-5.8.3.jar
 JustEnoughCalculation-1.16.5-3.8.6.jar
@@ -137,8 +143,10 @@ kubejs-mekanism-1605.1.2-build.2.jar
 kubejs-thermal-1605.1.4-build.4.jar
 LegendaryTooltips-1.16.5-1.1.6.jar
 LibX-1.16.3-1.0.76.jar
+light-overlay-5.8.1.jar
 Lollipop-1.16.5-3.2.9.jar
 lootr-1.16.5-0.1.12.42.jar
+LostTrinkets-1.16.5-0.1.27.jar
 magicfeather-1.16.2-3.2.0.jar
 mahoutsukai-1.16.5-v1.34.12.jar
 Mantle-1.16.5-1.6.157.jar
@@ -150,7 +158,7 @@ MekanismTools-1.16.5-10.1.2.457.jar
 metalbarrels-1.16.2-3.3b.jar
 mgui-1.16.5-3.3.0.jar
 mightyarchitect-mc1.16.3_v0.5.jar
-MiniCoal2-1.16.1-0.0.2-universal.jar
+mininggadgets-1.7.5.jar
 mob_grinding_utils-1.16.5-0.4.37.jar
 modnametooltip_1.16.2-1.15.0.jar
 modular-routers-1.16.5-7.5.2-83.jar
@@ -165,6 +173,7 @@ nethers_delight-2.1.jar
 observable-0.2.1-forge.jar
 observerlib-1.16.5-1.5.3.jar
 occultism-1.16.5-1.28.0.jar
+occultism_kubejs-1.16.5-0.0.1.jar
 Patchouli-1.16.4-53.2.jar
 pedestals-0.8s_hotfix_6.jar
 personality-1.16.5-1.0.3.jar
@@ -231,6 +240,7 @@ thermal_innovation-1.16.5-1.4.1.3.jar
 thermal_locomotion-1.16.5-1.4.1.3.jar
 The_Undergarden-1.16.5-0.5.5.jar
 time-in-a-bottle-1.1.0.jar
+Tiny-Coal-1.16.4-1.0.0.jar
 tinygates-0.1.2a.jar
 tinyredstone-1.16.5-1.13.3.jar
 Tips-1.16.5-4.0.16.jar
