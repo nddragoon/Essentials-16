@@ -1,0 +1,304 @@
+["Iridium Config"]
+
+	["Iridium Config".Overworld]
+		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
+		generate_in_the_overworld = false
+		#Baseline Y-Level [Default: 12]
+		#Range: 0 ~ 256
+		overworld_base = 12
+		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 8]
+		#Range: 0 ~ 256
+		overworld_spread = 8
+		#Average Ores per Chunk [Default: 6]
+		#Range: 0 ~ 64
+		overworld_count = 6
+		#Configure the ore Vein Size [Default: 6]
+		#Range: 0 ~ 64
+		overworld_size = 6
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
+		#List of biome IDs in which the ore is not allowed to generate.
+		#To blacklist all biomes from a single mod, use 'modid:*'
+		overworld_biome_blacklist = []
+		#Invert Blacklist to Whitelist [Default: false]
+		overworld_biome_list_invert = false
+
+	["Iridium Config"."The Nether"]
+		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
+		generate_in_the_nether = false
+		#Baseline Y-Level [Default: 42]
+		#Range: 0 ~ 128
+		nether_base = 42
+		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 8]
+		#Range: 0 ~ 128
+		nether_spread = 8
+		#Average Ores per Chunk [Default: 6]
+		#Range: 0 ~ 64
+		nether_count = 6
+		#Ore Vein Size [Default: 6]
+		#Range: 0 ~ 64
+		nether_size = 6
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
+		#List of biome IDs in which the ore is not allowed to generate.
+		#To blacklist all biomes from a single mod, use 'modid:*'
+		nether_biome_blacklist = []
+		#Invert Blacklist to Whitelist [Default: false]
+		nether_biome_list_invert = false
+
+	["Iridium Config"."The End"]
+		#Activate/Deactivate the Ore Gen in The End [Default: false]
+		generate_in_the_end = false
+		#Baseline Y-Level [Default: 32]
+		#Range: 0 ~ 256
+		end_base = 32
+		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 8]
+		#Range: 0 ~ 256
+		end_spread = 8
+		#Average Ores per Chunk [Default: 6]
+		#Range: 0 ~ 64
+		end_count = 6
+		#Ore Vein Size [Default: 6]
+		#Range: 0 ~ 64
+		end_size = 6
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
+		#List of biome IDs in which the ore is not allowed to generate.
+		#To blacklist all biomes from a single mod, use 'modid:*'
+		end_biome_blacklist = []
+		#Invert Blacklist to Whitelist [Default: false]
+		end_biome_list_invert = false
+
+["Certus Quartz Config"]
+
+	["Certus Quartz Config".Overworld]
+		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
+		generate_in_the_overworld = false
+		#Baseline Y-Level [Default: 32]
+		#Range: 0 ~ 256
+		overworld_base = 32
+		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 32]
+		#Range: 0 ~ 256
+		overworld_spread = 32
+		#Average Ores per Chunk [Default: 16]
+		#Range: 0 ~ 64
+		overworld_count = 16
+		#Configure the ore Vein Size [Default: 8]
+		#Range: 0 ~ 64
+		overworld_size = 8
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
+		#List of biome IDs in which the ore is not allowed to generate.
+		#To blacklist all biomes from a single mod, use 'modid:*'
+		overworld_biome_blacklist = []
+		#Invert Blacklist to Whitelist [Default: false]
+		overworld_biome_list_invert = false
+
+	["Certus Quartz Config"."The Nether"]
+		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
+		generate_in_the_nether = false
+		#Baseline Y-Level [Default: 62]
+		#Range: 0 ~ 128
+		nether_base = 62
+		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 32]
+		#Range: 0 ~ 128
+		nether_spread = 32
+		#Average Ores per Chunk [Default: 16]
+		#Range: 0 ~ 64
+		nether_count = 16
+		#Ore Vein Size [Default: 8]
+		#Range: 0 ~ 64
+		nether_size = 8
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
+		#List of biome IDs in which the ore is not allowed to generate.
+		#To blacklist all biomes from a single mod, use 'modid:*'
+		nether_biome_blacklist = []
+		#Invert Blacklist to Whitelist [Default: false]
+		nether_biome_list_invert = false
+
+	["Certus Quartz Config"."The End"]
+		#Activate/Deactivate the Ore Gen in The End [Default: false]
+		generate_in_the_end = false
+		#Baseline Y-Level [Default: 52]
+		#Range: 0 ~ 256
+		end_base = 52
+		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 32]
+		#Range: 0 ~ 256
+		end_spread = 32
+		#Average Ores per Chunk [Default: 16]
+		#Range: 0 ~ 64
+		end_count = 16
+		#Ore Vein Size [Default: 8]
+		#Range: 0 ~ 64
+		end_size = 8
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
+		#List of biome IDs in which the ore is not allowed to generate.
+		#To blacklist all biomes from a single mod, use 'modid:*'
+		end_biome_blacklist = []
+		#Invert Blacklist to Whitelist [Default: false]
+		end_biome_list_invert = false
+
+["Charged Certus Quartz Config"]
+
+	["Charged Certus Quartz Config".Overworld]
+		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
+		generate_in_the_overworld = false
+		#Baseline Y-Level [Default: 16]
+		#Range: 0 ~ 256
+		overworld_base = 16
+		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 16]
+		#Range: 0 ~ 256
+		overworld_spread = 16
+		#Average Ores per Chunk [Default: 8]
+		#Range: 0 ~ 64
+		overworld_count = 8
+		#Configure the ore Vein Size [Default: 4]
+		#Range: 0 ~ 64
+		overworld_size = 4
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
+		#List of biome IDs in which the ore is not allowed to generate.
+		#To blacklist all biomes from a single mod, use 'modid:*'
+		overworld_biome_blacklist = []
+		#Invert Blacklist to Whitelist [Default: false]
+		overworld_biome_list_invert = false
+
+	["Charged Certus Quartz Config"."The Nether"]
+		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
+		generate_in_the_nether = false
+		#Baseline Y-Level [Default: 46]
+		#Range: 0 ~ 128
+		nether_base = 46
+		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 16]
+		#Range: 0 ~ 128
+		nether_spread = 16
+		#Average Ores per Chunk [Default: 8]
+		#Range: 0 ~ 64
+		nether_count = 8
+		#Ore Vein Size [Default: 4]
+		#Range: 0 ~ 64
+		nether_size = 4
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
+		#List of biome IDs in which the ore is not allowed to generate.
+		#To blacklist all biomes from a single mod, use 'modid:*'
+		nether_biome_blacklist = []
+		#Invert Blacklist to Whitelist [Default: false]
+		nether_biome_list_invert = false
+
+	["Charged Certus Quartz Config"."The End"]
+		#Activate/Deactivate the Ore Gen in The End [Default: false]
+		generate_in_the_end = false
+		#Baseline Y-Level [Default: 36]
+		#Range: 0 ~ 256
+		end_base = 36
+		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 16]
+		#Range: 0 ~ 256
+		end_spread = 16
+		#Average Ores per Chunk [Default: 8]
+		#Range: 0 ~ 64
+		end_count = 8
+		#Ore Vein Size [Default: 4]
+		#Range: 0 ~ 64
+		end_size = 4
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
+		#List of biome IDs in which the ore is not allowed to generate.
+		#To blacklist all biomes from a single mod, use 'modid:*'
+		end_biome_blacklist = []
+		#Invert Blacklist to Whitelist [Default: false]
+		end_biome_list_invert = false
+
+["Stratum Config: minecraft_stone"]
+	active = true
+
+["Stratum Config: minecraft_andesite"]
+	active = true
+
+["Stratum Config: minecraft_granite"]
+	active = true
+
+["Stratum Config: minecraft_diorite"]
+	active = true
+
+["Stratum Config: minecraft_sand"]
+	active = true
+
+["Stratum Config: minecraft_gravel"]
+	active = true
+
+["Stratum Config: minecraft_netherrack"]
+	active = true
+
+["Stratum Config: minecraft_blackstone"]
+	active = true
+
+["Stratum Config: minecraft_basalt"]
+	active = true
+
+["Stratum Config: minecraft_soul_soil"]
+	active = true
+
+["Stratum Config: minecraft_end_stone"]
+	active = true
+
+["Stratum Config: create_gabbro"]
+	active = true
+
+["Stratum Config: create_limestone"]
+	active = true
+
+["Stratum Config: create_scoria"]
+	active = true
+
+["Stratum Config: create_weathered_limestone"]
+	active = true
+
+["Stratum Config: quark_jasper"]
+	active = true
+
+["Stratum Config: quark_marble"]
+	active = true
+
+["Stratum Config: quark_slate"]
+	active = true
+
+["Stratum Config: quark_deepslate"]
+	active = true
+
+["Stratum Config: byg_mossy_stone"]
+	active = true
+
+["Stratum Config: byg_brimstone"]
+	active = true
+
+["Stratum Config: byg_subzero_ash"]
+	active = true
+
+["Stratum Config: byg_blue_netherrack"]
+	active = true
+
+["Stratum Config: byg_nylium_soul_soil"]
+	active = true
+
+["Stratum Config: byg_ether_stone"]
+	active = true
+
+["Stratum Config: byg_cryptic_stone"]
+	active = true
+
+["Stratum Config: betterend_flavolite"]
+	active = true
+
+["Stratum Config: betterend_sulphuric_rock"]
+	active = true
+
+["Stratum Config: betterend_violecite"]
+	active = true
+
+["Stratum Config: astral_marble"]
+	active = true
+
+
