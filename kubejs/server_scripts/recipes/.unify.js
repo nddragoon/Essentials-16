@@ -25,7 +25,7 @@ onEvent('recipes', event => {
     ]
     
     metals.forEach(element => {
-        if (!(element in ['iron', 'gold'])) {
+        if (element != 'iron' && element != 'gold') {
             event.replaceOutput(`#forge:ingots/${element}`, `emendatusenigmatica:${element}_ingot`)
             event.replaceInput(`#forge:ingots/${element}`, `#forge:ingots/${element}`)
             event.replaceOutput(`#forge:storage_blocks/${element}`, `emendatusenigmatica:${element}_block`)
