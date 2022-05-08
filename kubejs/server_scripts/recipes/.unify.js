@@ -1,84 +1,363 @@
 onEvent('recipes', event => {
-    metals = [
-        'iron',
-        'gold',
-        'copper',
-        'aluminum',
-        'silver',
-        'lead',
-        'nickel',
-        'uranium',
-        'osmium',
-        'tin',
-        'zinc',
-        'cobalt',
-        'iridium',
-        'bronze',
-        'brass',
-        'constantan',
-        'electrum',
-        'steel',
-        'invar',
-        'signalum',
-        'lumium',
-        'enderium'
-    ]
-    
-    metals.forEach(element => {
-        if (element != 'iron' && element != 'gold') {
-            event.replaceOutput(`#forge:ingots/${element}`, `emendatusenigmatica:${element}_ingot`)
-            event.replaceInput(`#forge:ingots/${element}`, `#forge:ingots/${element}`)
-            event.replaceOutput(`#forge:storage_blocks/${element}`, `emendatusenigmatica:${element}_block`)
-            event.replaceInput(`#forge:storage_blocks/${element}`, `#forge:storage_blocks/${element}`)
-            event.replaceOutput(`#forge:nuggets/${element}`, `emendatusenigmatica:${element}_nugget`)
-            event.replaceInput(`#forge:nuggets/${element}`, `#forge:nuggets/${element}`)
+    materials = [{
+            name: 'wood',
+            dust: 'emendatusenigmatica:wood_dust'
+        }, {
+            name: 'graphite',
+            ingot: 'biggerreactors:graphite_ingot',
+            block: 'biggerreactors:graphite_block',
+            dust: 'emendatusenigmatica:graphite_dust'
+        }, {
+            name: 'lithium',
+            dust: 'emendatusenigmatica:lithium_dust'
+        }, {
+            name: 'coal',
+            block: 'minecraft:coal_block',
+            dust: 'emendatusenigmatica:coal_dust'
+        }, {
+            name: 'charcoal',
+            block: 'mekanism:block_charcoal',
+            dust: 'emendatusenigmatica:charcoal_dust'
+        }, {
+            name: 'coal_coke',
+            block: 'emendatusenigmatica:coke_block',
+            dust: 'emendatusenigmatica:coke_dust'
+        }, {
+            name: 'saltpeter',
+            gem: 'emendatusenigmatica:potassium_nitrate_gem',
+            block: 'emendatusenigmatica:potassium_nitrate_block',
+            dust: 'emendatusenigmatica:potassium_nitrate_dust'
+        }, {
+            name: 'niter',
+            gem: 'emendatusenigmatica:potassium_nitrate_gem',
+            block: 'emendatusenigmatica:potassium_nitrate_block',
+            dust: 'emendatusenigmatica:potassium_nitrate_dust'
+        }, {
+            name: 'sulfur',
+            gem: 'emendatusenigmatica:sulfur_gem',
+            block: 'emendatusenigmatica:sulfur_block',
+            dust: 'emendatusenigmatica:sulfur_dust'
+        }, {
+            name: 'mana',
+            gem: 'emendatusenigmatica:arcane_gem',
+            block: 'emendatusenigmatica:arcane_block'
+        }, {
+            name: 'diamond',
+            gem: 'minecraft:diamond',
+            block: 'minecraft:diamond_block',
+            nugget: 'translocators:diamond_nugget',
+            dust: 'emendatusenigmatica:diamond_dust',
+            gear: 'emendatusenigmatica:diamond_gear',
+            plate: 'emendatusenigmatica:diamond_plate',
+            rod: 'emendatusenigmatica:diamond_rod'
+        }, {
+            name: 'lapis',
+            gem: 'minecraft:lapis_lazuli',
+            block: 'minecraft:lapis_block',
+            dust: 'emendatusenigmatica:lapis_dust',
+            gear: 'emendatusenigmatica:lapis_gear',
+            plate: 'emendatusenigmatica:lapis_plate',
+            rod: 'emendatusenigmatica:lapis_rod'
+        }, {
+            name: 'emerald',
+            gem: 'minecraft:emerald',
+            block: 'minecraft:emerald_block',
+            dust: 'emendatusenigmatica:emerald_dust',
+            gear: 'emendatusenigmatica:emerald_gear',
+            plate: 'emendatusenigmatica:emerald_plate',
+            rod: 'emendatusenigmatica:emerald_rod'
+        }, {
+            name: 'quartz',
+            gem: 'minecraft:quartz',
+            block: 'minecraft:quartz_block',
+            dust: 'emendatusenigmatica:quartz_dust',
+            gear: 'emendatusenigmatica:quartz_gear'
+        }, {
+            name: 'fluorite',
+            gem: 'emendatusenigmatica:fluorite_gem',
+            block: 'emendatusenigmatica:fluorite_block',
+            dust: 'emendatusenigmatica:fluorite_dust'
+        }, {
+            name: 'cinnabar',
+            gem: 'emendatusenigmatica:cinnabar_gem',
+            block: 'emendatusenigmatica:cinnabar_block',
+            dust: 'emendatusenigmatica:cinnabar_dust'
+        }, {
+            name: 'apatite',
+            gem: 'emendatusenigmatica:apatite_gem',
+            block: 'emendatusenigmatica:apatite_block',
+            dust: 'emendatusenigmatica:apatite_dust'
+        }, {
+            name: 'ruby',
+            gem: 'emendatusenigmatica:ruby_gem',
+            block: 'emendatusenigmatica:ruby_block',
+            dust: 'emendatusenigmatica:ruby_dust',
+            gear: 'emendatusenigmatica:ruby_gear',
+            plate: 'emendatusenigmatica:ruby_plate',
+            rod: 'emendatusenigmatica:ruby_rod'
+        }, {
+            name: 'peridot',
+            gem: 'emendatusenigmatica:peridot_gem',
+            block: 'emendatusenigmatica:peridot_block',
+            dust: 'emendatusenigmatica:peridot_dust',
+            gear: 'emendatusenigmatica:peridot_gear',
+            plate: 'emendatusenigmatica:peridot_plate',
+            rod: 'emendatusenigmatica:peridot_rod'
+        }, {
+            name: 'sapphire',
+            gem: 'emendatusenigmatica:sapphire_gem',
+            block: 'emendatusenigmatica:sapphire_block',
+            dust: 'emendatusenigmatica:sapphire_dust',
+            gear: 'emendatusenigmatica:sapphire_gear',
+            plate: 'emendatusenigmatica:sapphire_plate',
+            rod: 'emendatusenigmatica:sapphire_rod'
+        }, {
+            name: 'iron',
+            ingot: 'minecraft:iron_ingot',
+            block: 'minecraft:iron_block',
+            nugget: 'minecraft:iron_nugget',
+            dust: 'emendatusenigmatica:iron_dust',
+            gear: 'emendatusenigmatica:iron_gear',
+            plate: 'emendatusenigmatica:iron_plate',
+            rod: 'emendatusenigmatica:iron_rod'
+        }, {
+            name: 'copper',
+            ingot: 'emendatusenigmatica:copper_ingot',
+            block: 'emendatusenigmatica:copper_block',
+            nugget: 'emendatusenigmatica:copper_nugget',
+            dust: 'emendatusenigmatica:copper_dust',
+            gear: 'emendatusenigmatica:copper_gear',
+            plate: 'emendatusenigmatica:copper_plate',
+            rod: 'emendatusenigmatica:copper_rod'
+        }, {
+            name: 'aluminum',
+            ingot: 'emendatusenigmatica:aluminum_ingot',
+            block: 'emendatusenigmatica:aluminum_block',
+            nugget: 'emendatusenigmatica:aluminum_nugget',
+            dust: 'emendatusenigmatica:aluminum_dust',
+            gear: 'emendatusenigmatica:aluminum_gear',
+            plate: 'emendatusenigmatica:aluminum_plate',
+            rod: 'emendatusenigmatica:aluminum_rod'
+        }, {
+            name: 'silver',
+            ingot: 'emendatusenigmatica:silver_ingot',
+            block: 'emendatusenigmatica:silver_block',
+            nugget: 'emendatusenigmatica:silver_nugget',
+            dust: 'emendatusenigmatica:silver_dust',
+            gear: 'emendatusenigmatica:silver_gear',
+            plate: 'emendatusenigmatica:silver_plate',
+            rod: 'emendatusenigmatica:silver_rod'
+        }, {
+            name: 'lead',
+            ingot: 'emendatusenigmatica:lead_ingot',
+            block: 'emendatusenigmatica:lead_block',
+            nugget: 'emendatusenigmatica:lead_nugget',
+            dust: 'emendatusenigmatica:lead_dust',
+            gear: 'emendatusenigmatica:lead_gear',
+            plate: 'emendatusenigmatica:lead_plate',
+            rod: 'emendatusenigmatica:lead_rod'
+        }, {
+            name: 'nickel',
+            ingot: 'emendatusenigmatica:nickel_ingot',
+            block: 'emendatusenigmatica:nickel_block',
+            nugget: 'emendatusenigmatica:nickel_nugget',
+            dust: 'emendatusenigmatica:nickel_dust',
+            gear: 'emendatusenigmatica:nickel_gear',
+            plate: 'emendatusenigmatica:nickel_plate',
+            rod: 'emendatusenigmatica:nickel_rod'
+        }, {
+            name: 'uranium',
+            ingot: 'emendatusenigmatica:uranium_ingot',
+            block: 'emendatusenigmatica:uranium_block',
+            nugget: 'emendatusenigmatica:uranium_nugget',
+            dust: 'emendatusenigmatica:uranium_dust',
+            gear: 'emendatusenigmatica:uranium_gear',
+            plate: 'emendatusenigmatica:uranium_plate',
+            rod: 'emendatusenigmatica:uranium_rod'
+        }, {
+            name: 'osmium',
+            ingot: 'emendatusenigmatica:osmium_ingot',
+            block: 'emendatusenigmatica:osmium_block',
+            nugget: 'emendatusenigmatica:osmium_nugget',
+            dust: 'emendatusenigmatica:osmium_dust',
+            gear: 'emendatusenigmatica:osmium_gear',
+            plate: 'emendatusenigmatica:osmium_plate',
+            rod: 'emendatusenigmatica:osmium_rod'
+        }, {
+            name: 'tin',
+            ingot: 'emendatusenigmatica:tin_ingot',
+            block: 'emendatusenigmatica:tin_block',
+            nugget: 'emendatusenigmatica:tin_nugget',
+            dust: 'emendatusenigmatica:tin_dust',
+            gear: 'emendatusenigmatica:tin_gear',
+            plate: 'emendatusenigmatica:tin_plate',
+            rod: 'emendatusenigmatica:tin_rod'
+        }, {
+            name: 'zinc',
+            ingot: 'emendatusenigmatica:zinc_ingot',
+            block: 'emendatusenigmatica:zinc_block',
+            nugget: 'emendatusenigmatica:zinc_nugget',
+            dust: 'emendatusenigmatica:zinc_dust',
+            gear: 'emendatusenigmatica:zinc_gear',
+            plate: 'emendatusenigmatica:zinc_plate',
+            rod: 'emendatusenigmatica:zinc_rod'
+        }, {
+            name: 'cobalt',
+            ingot: 'emendatusenigmatica:cobalt_ingot',
+            block: 'emendatusenigmatica:cobalt_block',
+            nugget: 'emendatusenigmatica:cobalt_nugget',
+            dust: 'emendatusenigmatica:cobalt_dust',
+            gear: 'emendatusenigmatica:cobalt_gear',
+            plate: 'emendatusenigmatica:cobalt_plate',
+            rod: 'emendatusenigmatica:cobalt_rod'
+        }, {
+            name: 'bronze',
+            ingot: 'emendatusenigmatica:bronze_ingot',
+            block: 'emendatusenigmatica:bronze_block',
+            nugget: 'emendatusenigmatica:bronze_nugget',
+            dust: 'emendatusenigmatica:bronze_dust',
+            gear: 'emendatusenigmatica:bronze_gear',
+            plate: 'emendatusenigmatica:bronze_plate',
+            rod: 'emendatusenigmatica:bronze_rod'
+        }, {
+            name: 'brass',
+            ingot: 'emendatusenigmatica:brass_ingot',
+            block: 'emendatusenigmatica:brass_block',
+            nugget: 'emendatusenigmatica:brass_nugget',
+            dust: 'emendatusenigmatica:brass_dust',
+            gear: 'emendatusenigmatica:brass_gear',
+            plate: 'emendatusenigmatica:brass_plate',
+            rod: 'emendatusenigmatica:brass_rod'
+        }, {
+            name: 'constantan',
+            ingot: 'emendatusenigmatica:constantan_ingot',
+            block: 'emendatusenigmatica:constantan_block',
+            nugget: 'emendatusenigmatica:constantan_nugget',
+            dust: 'emendatusenigmatica:constantan_dust',
+            gear: 'emendatusenigmatica:constantan_gear',
+            plate: 'emendatusenigmatica:constantan_plate',
+            rod: 'emendatusenigmatica:constantan_rod'
+        }, {
+            name: 'electrum',
+            ingot: 'emendatusenigmatica:electrum_ingot',
+            block: 'emendatusenigmatica:electrum_block',
+            nugget: 'emendatusenigmatica:electrum_nugget',
+            dust: 'emendatusenigmatica:electrum_dust',
+            gear: 'emendatusenigmatica:electrum_gear',
+            plate: 'emendatusenigmatica:electrum_plate',
+            rod: 'emendatusenigmatica:electrum_rod'
+        }, {
+            name: 'steel',
+            ingot: 'emendatusenigmatica:steel_ingot',
+            block: 'emendatusenigmatica:steel_block',
+            nugget: 'emendatusenigmatica:steel_nugget',
+            dust: 'emendatusenigmatica:steel_dust',
+            gear: 'emendatusenigmatica:steel_gear',
+            plate: 'emendatusenigmatica:steel_plate',
+            rod: 'emendatusenigmatica:steel_rod'
+        }, {
+            name: 'invar',
+            ingot: 'emendatusenigmatica:invar_ingot',
+            block: 'emendatusenigmatica:invar_block',
+            nugget: 'emendatusenigmatica:invar_nugget',
+            dust: 'emendatusenigmatica:invar_dust',
+            gear: 'emendatusenigmatica:invar_gear',
+            plate: 'emendatusenigmatica:invar_plate',
+            rod: 'emendatusenigmatica:invar_rod'
+        }, {
+            name: 'signalum',
+            ingot: 'emendatusenigmatica:signalum_ingot',
+            block: 'emendatusenigmatica:signalum_block',
+            nugget: 'emendatusenigmatica:signalum_nugget',
+            dust: 'emendatusenigmatica:signalum_dust',
+            gear: 'emendatusenigmatica:signalum_gear',
+            plate: 'emendatusenigmatica:signalum_plate',
+            rod: 'emendatusenigmatica:signalum_rod'
+        }, {
+            name: 'lumium',
+            ingot: 'emendatusenigmatica:lumium_ingot',
+            block: 'emendatusenigmatica:lumium_block',
+            nugget: 'emendatusenigmatica:lumium_nugget',
+            dust: 'emendatusenigmatica:lumium_dust',
+            gear: 'emendatusenigmatica:lumium_gear',
+            plate: 'emendatusenigmatica:lumium_plate',
+            rod: 'emendatusenigmatica:lumium_rod'
+        }, {
+            name: 'enderium',
+            ingot: 'emendatusenigmatica:enderium_ingot',
+            block: 'emendatusenigmatica:enderium_block',
+            nugget: 'emendatusenigmatica:enderium_nugget',
+            dust: 'emendatusenigmatica:enderium_dust',
+            gear: 'emendatusenigmatica:enderium_gear',
+            plate: 'emendatusenigmatica:enderium_plate',
+            rod: 'emendatusenigmatica:enderium_rod'
+        }, {
+            name: 'gold',
+            ingot: 'minecraft:gold_ingot',
+            block: 'minecraft:gold_block',
+            nugget: 'minecraft:gold_nugget',
+            dust: 'emendatusenigmatica:gold_dust',
+            gear: 'emendatusenigmatica:gold_gear',
+            plate: 'emendatusenigmatica:gold_plate',
+            rod: 'emendatusenigmatica:gold_rod'
         }
-        event.replaceOutput(`#forge:gears/${element}`, `emendatusenigmatica:${element}_gear`)
-        event.replaceInput(`#forge:gears/${element}`, `#forge:gears/${element}`)
-        event.replaceOutput(`#forge:plates/${element}`, `emendatusenigmatica:${element}_plate`)
-        event.replaceInput(`#forge:plates/${element}`, `#forge:plates/${element}`)
-        event.replaceOutput(`#forge:rods/${element}`, `emendatusenigmatica:${element}_rod`)
-        event.replaceInput(`#forge:rods/${element}`, `#forge:rods/${element}`)
-        event.replaceOutput(`#forge:dusts/${element}`, `emendatusenigmatica:${element}_dust`)
-        event.replaceInput(`#forge:dusts/${element}`, `#forge:dusts/${element}`)
+    ]
+
+    // Iterates through the materials array
+    materials.forEach(material => {
+        // Iterates through every property of the object
+        Object.keys(material).forEach(key => {
+            switch (key) {
+                case 'ingot':
+                    event.replaceOutput(`#forge:ingots/${material.name}`, material.ingot)
+                    event.replaceInput(`#forge:ingots/${material.name}`, `#forge:ingots/${material.name}`)
+                    break
+                case 'gem':
+                    event.replaceOutput(`#forge:gems/${material.name}`, material.gem)
+                    event.replaceInput(`#forge:gems/${material.name}`, `#forge:gems/${material.name}`)
+                    break
+                case 'block':
+                    event.replaceOutput(`#forge:storage_blocks/${material.name}`, material.block)
+                    event.replaceInput(`#forge:storage_blocks/${material.name}`, `#forge:storage_blocks/${material.name}`)
+                    break
+                case 'nugget':
+                    event.replaceOutput(`#forge:nuggets/${material.name}`, material.nugget)
+                    event.replaceInput(`#forge:nuggets/${material.name}`, `#forge:nuggets/${material.name}`)
+                    break
+                case 'dust':
+                    event.replaceOutput(`#forge:dusts/${material.name}`, material.dust)
+                    event.replaceInput(`#forge:dusts/${material.name}`, `#forge:dusts/${material.name}`)
+                    break
+                case 'gear':
+                    event.replaceOutput(`#forge:gears/${material.name}`, material.gear)
+                    event.replaceInput(`#forge:gears/${material.name}`, `#forge:gears/${material.name}`)
+                    break
+                case 'plate':
+                    event.replaceOutput(`#forge:plates/${material.name}`, material.plate)
+                    event.replaceInput(`#forge:plates/${material.name}`, `#forge:plates/${material.name}`)
+                    break
+                case 'rod':
+                    event.replaceOutput(`#forge:rods/${material.name}`, material.rod)
+                    event.replaceInput(`#forge:rods/${material.name}`, `#forge:rods/${material.name}`)
+                    break
+            }
+        })
     })
 
-    // CCA rolling recipes fix
-
-    {
-        let additionsrecipes = [
-            'createaddition:rolling/copper_ingot',
-            'createaddition:rolling/brass_ingot',
-            'createaddition:rolling/gold_ingot',
-            'createaddition:rolling/iron_ingot',
-            'createaddition:rolling/steel_ingot',
-            'createaddition:rolling/copper_plate',
-            'createaddition:rolling/aluminum_ingot'
-        ]
-        
-        additionsrecipes.forEach(element => {
-            event.remove({id: element})
-        })
-
-        let additionscustoms = [
-            ['#forge:ingots/copper', 'emendatusenigmatica:copper_rod'],
-            ['#forge:ingots/brass', 'emendatusenigmatica:brass_rod'],
-            ['#forge:ingots/gold', 'emendatusenigmatica:gold_rod'],
-            ['#forge:ingots/iron', 'emendatusenigmatica:iron_rod'],
-            ['#forge:ingots/steel', 'emendatusenigmatica:steel_rod'],
-            ['#forge:plates/copper', 'immersiveengineering:wire_copper'],
-            ['#forge:ingots/aluminum', 'emendatusenigmatica:aluminum_rod']
-        ]
-        
-        additionscustoms.forEach(element => {
-            event.custom({
-                "type": "createaddition:rolling",
-                "input": element[0],
-                "result": {
-                    "item": element[1],
-                    "count": 2
-                }
-            })
-        })
-    }
+    // Materials with non-standard tags that won't work with the above code
+    // Coal coke item (block and dust above)
+    event.replaceOutput('#forge:coal_coke', 'emendatusenigmatica:coke_gem')
+    event.replaceInput('#forge:coal_coke', '#forge:coal_coke')
+    // Bitumen
+    event.replaceOutput('#forge:bitumen', 'emendatusenigmatica:bitumen_gem')
+    event.replaceInput('#forge:bitumen', '#forge:bitumen')
+    // Slag
+    event.replaceOutput('#forge:slag', 'thermal:slag')
+    event.replaceInput('#forge:slag', '#forge:slag')
+    // Dimensional Shards
+    event.replaceOutput('rftoolsbase:dimensionalshard', 'emendatusenigmatica:dimensional_gem')
+    event.replaceInput('rftoolsbase:dimensionalshard', ['rftoolsbase:dimensionalshard', 'emendatusenigmatica:dimensional_shard'])
+    // Silicon
+    event.replaceOutput('#forge:silicon', 'emendatusenigmatica:silicon_gem')
+    event.replaceInput('#forge:silicon', '#forge:silicon')
 })
