@@ -300,6 +300,14 @@ onEvent('recipes', event => {
             gear: 'emendatusenigmatica:gold_gear',
             plate: 'emendatusenigmatica:gold_plate',
             rod: 'emendatusenigmatica:gold_rod'
+        }, {
+            name: 'netherite',
+            ingot: 'minecraft:netherite_ingot',
+            storage_block: 'minecraft:netherite_block',
+            nugget: 'createdeco:netherite_nugget',
+            dust: 'thermal:netherite_dust',
+            gear: 'thermal:netherite_gear',
+            plate: 'createdeco:netherite_sheet'
         }
     ]
 
