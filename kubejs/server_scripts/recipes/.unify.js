@@ -5,46 +5,46 @@ onEvent('recipes', event => {
         }, {
             name: 'graphite',
             ingot: 'biggerreactors:graphite_ingot',
-            block: 'biggerreactors:graphite_block',
+            storage_block: 'biggerreactors:graphite_block',
             dust: 'emendatusenigmatica:graphite_dust'
         }, {
             name: 'lithium',
             dust: 'emendatusenigmatica:lithium_dust'
         }, {
             name: 'coal',
-            block: 'minecraft:coal_block',
+            storage_block: 'minecraft:coal_block',
             dust: 'emendatusenigmatica:coal_dust'
         }, {
             name: 'charcoal',
-            block: 'mekanism:block_charcoal',
+            storage_block: 'mekanism:block_charcoal',
             dust: 'emendatusenigmatica:charcoal_dust'
         }, {
             name: 'coal_coke',
-            block: 'emendatusenigmatica:coke_block',
+            storage_block: 'emendatusenigmatica:coke_block',
             dust: 'emendatusenigmatica:coke_dust'
         }, {
             name: 'saltpeter',
             gem: 'emendatusenigmatica:potassium_nitrate_gem',
-            block: 'emendatusenigmatica:potassium_nitrate_block',
+            storage_block: 'emendatusenigmatica:potassium_nitrate_block',
             dust: 'emendatusenigmatica:potassium_nitrate_dust'
         }, {
             name: 'niter',
             gem: 'emendatusenigmatica:potassium_nitrate_gem',
-            block: 'emendatusenigmatica:potassium_nitrate_block',
+            storage_block: 'emendatusenigmatica:potassium_nitrate_block',
             dust: 'emendatusenigmatica:potassium_nitrate_dust'
         }, {
             name: 'sulfur',
             gem: 'emendatusenigmatica:sulfur_gem',
-            block: 'emendatusenigmatica:sulfur_block',
+            storage_block: 'emendatusenigmatica:sulfur_block',
             dust: 'emendatusenigmatica:sulfur_dust'
         }, {
             name: 'mana',
             gem: 'emendatusenigmatica:arcane_gem',
-            block: 'emendatusenigmatica:arcane_block'
+            storage_block: 'emendatusenigmatica:arcane_block'
         }, {
             name: 'diamond',
             gem: 'minecraft:diamond',
-            block: 'minecraft:diamond_block',
+            storage_block: 'minecraft:diamond_block',
             nugget: 'translocators:diamond_nugget',
             dust: 'emendatusenigmatica:diamond_dust',
             gear: 'emendatusenigmatica:diamond_gear',
@@ -53,7 +53,7 @@ onEvent('recipes', event => {
         }, {
             name: 'lapis',
             gem: 'minecraft:lapis_lazuli',
-            block: 'minecraft:lapis_block',
+            storage_block: 'minecraft:lapis_block',
             dust: 'emendatusenigmatica:lapis_dust',
             gear: 'emendatusenigmatica:lapis_gear',
             plate: 'emendatusenigmatica:lapis_plate',
@@ -61,7 +61,7 @@ onEvent('recipes', event => {
         }, {
             name: 'emerald',
             gem: 'minecraft:emerald',
-            block: 'minecraft:emerald_block',
+            storage_block: 'minecraft:emerald_block',
             dust: 'emendatusenigmatica:emerald_dust',
             gear: 'emendatusenigmatica:emerald_gear',
             plate: 'emendatusenigmatica:emerald_plate',
@@ -69,28 +69,28 @@ onEvent('recipes', event => {
         }, {
             name: 'quartz',
             gem: 'minecraft:quartz',
-            block: 'minecraft:quartz_block',
+            storage_block: 'minecraft:quartz_block',
             dust: 'emendatusenigmatica:quartz_dust',
             gear: 'emendatusenigmatica:quartz_gear'
         }, {
             name: 'fluorite',
             gem: 'emendatusenigmatica:fluorite_gem',
-            block: 'emendatusenigmatica:fluorite_block',
+            storage_block: 'emendatusenigmatica:fluorite_block',
             dust: 'emendatusenigmatica:fluorite_dust'
         }, {
             name: 'cinnabar',
             gem: 'emendatusenigmatica:cinnabar_gem',
-            block: 'emendatusenigmatica:cinnabar_block',
+            storage_block: 'emendatusenigmatica:cinnabar_block',
             dust: 'emendatusenigmatica:cinnabar_dust'
         }, {
             name: 'apatite',
             gem: 'emendatusenigmatica:apatite_gem',
-            block: 'emendatusenigmatica:apatite_block',
+            storage_block: 'emendatusenigmatica:apatite_block',
             dust: 'emendatusenigmatica:apatite_dust'
         }, {
             name: 'ruby',
             gem: 'emendatusenigmatica:ruby_gem',
-            block: 'emendatusenigmatica:ruby_block',
+            storage_block: 'emendatusenigmatica:ruby_block',
             dust: 'emendatusenigmatica:ruby_dust',
             gear: 'emendatusenigmatica:ruby_gear',
             plate: 'emendatusenigmatica:ruby_plate',
@@ -98,7 +98,7 @@ onEvent('recipes', event => {
         }, {
             name: 'peridot',
             gem: 'emendatusenigmatica:peridot_gem',
-            block: 'emendatusenigmatica:peridot_block',
+            storage_block: 'emendatusenigmatica:peridot_block',
             dust: 'emendatusenigmatica:peridot_dust',
             gear: 'emendatusenigmatica:peridot_gear',
             plate: 'emendatusenigmatica:peridot_plate',
@@ -106,7 +106,7 @@ onEvent('recipes', event => {
         }, {
             name: 'sapphire',
             gem: 'emendatusenigmatica:sapphire_gem',
-            block: 'emendatusenigmatica:sapphire_block',
+            storage_block: 'emendatusenigmatica:sapphire_block',
             dust: 'emendatusenigmatica:sapphire_dust',
             gear: 'emendatusenigmatica:sapphire_gear',
             plate: 'emendatusenigmatica:sapphire_plate',
@@ -114,7 +114,7 @@ onEvent('recipes', event => {
         }, {
             name: 'iron',
             ingot: 'minecraft:iron_ingot',
-            block: 'minecraft:iron_block',
+            storage_block: 'minecraft:iron_block',
             nugget: 'minecraft:iron_nugget',
             dust: 'emendatusenigmatica:iron_dust',
             gear: 'emendatusenigmatica:iron_gear',
@@ -123,7 +123,7 @@ onEvent('recipes', event => {
         }, {
             name: 'copper',
             ingot: 'emendatusenigmatica:copper_ingot',
-            block: 'emendatusenigmatica:copper_block',
+            storage_block: 'emendatusenigmatica:copper_block',
             nugget: 'emendatusenigmatica:copper_nugget',
             dust: 'emendatusenigmatica:copper_dust',
             gear: 'emendatusenigmatica:copper_gear',
@@ -132,7 +132,7 @@ onEvent('recipes', event => {
         }, {
             name: 'aluminum',
             ingot: 'emendatusenigmatica:aluminum_ingot',
-            block: 'emendatusenigmatica:aluminum_block',
+            storage_block: 'emendatusenigmatica:aluminum_block',
             nugget: 'emendatusenigmatica:aluminum_nugget',
             dust: 'emendatusenigmatica:aluminum_dust',
             gear: 'emendatusenigmatica:aluminum_gear',
@@ -141,7 +141,7 @@ onEvent('recipes', event => {
         }, {
             name: 'silver',
             ingot: 'emendatusenigmatica:silver_ingot',
-            block: 'emendatusenigmatica:silver_block',
+            storage_block: 'emendatusenigmatica:silver_block',
             nugget: 'emendatusenigmatica:silver_nugget',
             dust: 'emendatusenigmatica:silver_dust',
             gear: 'emendatusenigmatica:silver_gear',
@@ -150,7 +150,7 @@ onEvent('recipes', event => {
         }, {
             name: 'lead',
             ingot: 'emendatusenigmatica:lead_ingot',
-            block: 'emendatusenigmatica:lead_block',
+            storage_block: 'emendatusenigmatica:lead_block',
             nugget: 'emendatusenigmatica:lead_nugget',
             dust: 'emendatusenigmatica:lead_dust',
             gear: 'emendatusenigmatica:lead_gear',
@@ -159,7 +159,7 @@ onEvent('recipes', event => {
         }, {
             name: 'nickel',
             ingot: 'emendatusenigmatica:nickel_ingot',
-            block: 'emendatusenigmatica:nickel_block',
+            storage_block: 'emendatusenigmatica:nickel_block',
             nugget: 'emendatusenigmatica:nickel_nugget',
             dust: 'emendatusenigmatica:nickel_dust',
             gear: 'emendatusenigmatica:nickel_gear',
@@ -168,7 +168,7 @@ onEvent('recipes', event => {
         }, {
             name: 'uranium',
             ingot: 'emendatusenigmatica:uranium_ingot',
-            block: 'emendatusenigmatica:uranium_block',
+            storage_block: 'emendatusenigmatica:uranium_block',
             nugget: 'emendatusenigmatica:uranium_nugget',
             dust: 'emendatusenigmatica:uranium_dust',
             gear: 'emendatusenigmatica:uranium_gear',
@@ -177,7 +177,7 @@ onEvent('recipes', event => {
         }, {
             name: 'osmium',
             ingot: 'emendatusenigmatica:osmium_ingot',
-            block: 'emendatusenigmatica:osmium_block',
+            storage_block: 'emendatusenigmatica:osmium_block',
             nugget: 'emendatusenigmatica:osmium_nugget',
             dust: 'emendatusenigmatica:osmium_dust',
             gear: 'emendatusenigmatica:osmium_gear',
@@ -186,7 +186,7 @@ onEvent('recipes', event => {
         }, {
             name: 'tin',
             ingot: 'emendatusenigmatica:tin_ingot',
-            block: 'emendatusenigmatica:tin_block',
+            storage_block: 'emendatusenigmatica:tin_block',
             nugget: 'emendatusenigmatica:tin_nugget',
             dust: 'emendatusenigmatica:tin_dust',
             gear: 'emendatusenigmatica:tin_gear',
@@ -195,7 +195,7 @@ onEvent('recipes', event => {
         }, {
             name: 'zinc',
             ingot: 'emendatusenigmatica:zinc_ingot',
-            block: 'emendatusenigmatica:zinc_block',
+            storage_block: 'emendatusenigmatica:zinc_block',
             nugget: 'emendatusenigmatica:zinc_nugget',
             dust: 'emendatusenigmatica:zinc_dust',
             gear: 'emendatusenigmatica:zinc_gear',
@@ -204,7 +204,7 @@ onEvent('recipes', event => {
         }, {
             name: 'cobalt',
             ingot: 'emendatusenigmatica:cobalt_ingot',
-            block: 'emendatusenigmatica:cobalt_block',
+            storage_block: 'emendatusenigmatica:cobalt_block',
             nugget: 'emendatusenigmatica:cobalt_nugget',
             dust: 'emendatusenigmatica:cobalt_dust',
             gear: 'emendatusenigmatica:cobalt_gear',
@@ -213,7 +213,7 @@ onEvent('recipes', event => {
         }, {
             name: 'bronze',
             ingot: 'emendatusenigmatica:bronze_ingot',
-            block: 'emendatusenigmatica:bronze_block',
+            storage_block: 'emendatusenigmatica:bronze_block',
             nugget: 'emendatusenigmatica:bronze_nugget',
             dust: 'emendatusenigmatica:bronze_dust',
             gear: 'emendatusenigmatica:bronze_gear',
@@ -222,7 +222,7 @@ onEvent('recipes', event => {
         }, {
             name: 'brass',
             ingot: 'emendatusenigmatica:brass_ingot',
-            block: 'emendatusenigmatica:brass_block',
+            storage_block: 'emendatusenigmatica:brass_block',
             nugget: 'emendatusenigmatica:brass_nugget',
             dust: 'emendatusenigmatica:brass_dust',
             gear: 'emendatusenigmatica:brass_gear',
@@ -231,7 +231,7 @@ onEvent('recipes', event => {
         }, {
             name: 'constantan',
             ingot: 'emendatusenigmatica:constantan_ingot',
-            block: 'emendatusenigmatica:constantan_block',
+            storage_block: 'emendatusenigmatica:constantan_block',
             nugget: 'emendatusenigmatica:constantan_nugget',
             dust: 'emendatusenigmatica:constantan_dust',
             gear: 'emendatusenigmatica:constantan_gear',
@@ -240,7 +240,7 @@ onEvent('recipes', event => {
         }, {
             name: 'electrum',
             ingot: 'emendatusenigmatica:electrum_ingot',
-            block: 'emendatusenigmatica:electrum_block',
+            storage_block: 'emendatusenigmatica:electrum_block',
             nugget: 'emendatusenigmatica:electrum_nugget',
             dust: 'emendatusenigmatica:electrum_dust',
             gear: 'emendatusenigmatica:electrum_gear',
@@ -249,7 +249,7 @@ onEvent('recipes', event => {
         }, {
             name: 'steel',
             ingot: 'emendatusenigmatica:steel_ingot',
-            block: 'emendatusenigmatica:steel_block',
+            storage_block: 'emendatusenigmatica:steel_block',
             nugget: 'emendatusenigmatica:steel_nugget',
             dust: 'emendatusenigmatica:steel_dust',
             gear: 'emendatusenigmatica:steel_gear',
@@ -258,7 +258,7 @@ onEvent('recipes', event => {
         }, {
             name: 'invar',
             ingot: 'emendatusenigmatica:invar_ingot',
-            block: 'emendatusenigmatica:invar_block',
+            storage_block: 'emendatusenigmatica:invar_block',
             nugget: 'emendatusenigmatica:invar_nugget',
             dust: 'emendatusenigmatica:invar_dust',
             gear: 'emendatusenigmatica:invar_gear',
@@ -267,7 +267,7 @@ onEvent('recipes', event => {
         }, {
             name: 'signalum',
             ingot: 'emendatusenigmatica:signalum_ingot',
-            block: 'emendatusenigmatica:signalum_block',
+            storage_block: 'emendatusenigmatica:signalum_block',
             nugget: 'emendatusenigmatica:signalum_nugget',
             dust: 'emendatusenigmatica:signalum_dust',
             gear: 'emendatusenigmatica:signalum_gear',
@@ -276,7 +276,7 @@ onEvent('recipes', event => {
         }, {
             name: 'lumium',
             ingot: 'emendatusenigmatica:lumium_ingot',
-            block: 'emendatusenigmatica:lumium_block',
+            storage_block: 'emendatusenigmatica:lumium_block',
             nugget: 'emendatusenigmatica:lumium_nugget',
             dust: 'emendatusenigmatica:lumium_dust',
             gear: 'emendatusenigmatica:lumium_gear',
@@ -285,7 +285,7 @@ onEvent('recipes', event => {
         }, {
             name: 'enderium',
             ingot: 'emendatusenigmatica:enderium_ingot',
-            block: 'emendatusenigmatica:enderium_block',
+            storage_block: 'emendatusenigmatica:enderium_block',
             nugget: 'emendatusenigmatica:enderium_nugget',
             dust: 'emendatusenigmatica:enderium_dust',
             gear: 'emendatusenigmatica:enderium_gear',
@@ -294,7 +294,7 @@ onEvent('recipes', event => {
         }, {
             name: 'gold',
             ingot: 'minecraft:gold_ingot',
-            block: 'minecraft:gold_block',
+            storage_block: 'minecraft:gold_block',
             nugget: 'minecraft:gold_nugget',
             dust: 'emendatusenigmatica:gold_dust',
             gear: 'emendatusenigmatica:gold_gear',
@@ -307,39 +307,9 @@ onEvent('recipes', event => {
     materials.forEach(material => {
         // Iterates through every property of the object
         Object.keys(material).forEach(key => {
-            switch (key) {
-                case 'ingot':
-                    event.replaceOutput(`#forge:ingots/${material.name}`, material.ingot)
-                    event.replaceInput(`#forge:ingots/${material.name}`, `#forge:ingots/${material.name}`)
-                    break
-                case 'gem':
-                    event.replaceOutput(`#forge:gems/${material.name}`, material.gem)
-                    event.replaceInput(`#forge:gems/${material.name}`, `#forge:gems/${material.name}`)
-                    break
-                case 'block':
-                    event.replaceOutput(`#forge:storage_blocks/${material.name}`, material.block)
-                    event.replaceInput(`#forge:storage_blocks/${material.name}`, `#forge:storage_blocks/${material.name}`)
-                    break
-                case 'nugget':
-                    event.replaceOutput(`#forge:nuggets/${material.name}`, material.nugget)
-                    event.replaceInput(`#forge:nuggets/${material.name}`, `#forge:nuggets/${material.name}`)
-                    break
-                case 'dust':
-                    event.replaceOutput(`#forge:dusts/${material.name}`, material.dust)
-                    event.replaceInput(`#forge:dusts/${material.name}`, `#forge:dusts/${material.name}`)
-                    break
-                case 'gear':
-                    event.replaceOutput(`#forge:gears/${material.name}`, material.gear)
-                    event.replaceInput(`#forge:gears/${material.name}`, `#forge:gears/${material.name}`)
-                    break
-                case 'plate':
-                    event.replaceOutput(`#forge:plates/${material.name}`, material.plate)
-                    event.replaceInput(`#forge:plates/${material.name}`, `#forge:plates/${material.name}`)
-                    break
-                case 'rod':
-                    event.replaceOutput(`#forge:rods/${material.name}`, material.rod)
-                    event.replaceInput(`#forge:rods/${material.name}`, `#forge:rods/${material.name}`)
-                    break
+            if (key != 'name') {
+                event.replaceOutput(`#forge:${key}s/${material.name}`, material[key])
+                event.replaceInput(`#forge:${key}s/${material.name}`, `#forge:${key}s/${material.name}`)
             }
         })
     })
