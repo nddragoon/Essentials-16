@@ -1,0 +1,5 @@
+[world]
+	#Whether lead ore is enabled. Set to false to disable spawning.
+	leadEnabled = false
+
+

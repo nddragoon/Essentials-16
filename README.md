@@ -1,2 +1,10 @@
-# Essentials-16
-A 1.16 kitchensink modpack designed to include as many content mods as possible
+# Just Enough Mods 16
+A 1.16 kitchensink modpack designed around polish, quality of life, and including as many content mods as possible.
+
+## Features so far
+This pack is still in pretty early development, but I'm hoping the release that is out is already in a mostly playable state. Some basic features have been implemented so far:
+- Most materials unified, including worldgen, under Emendatus Enigmatica.
+- Extensive modlist, including as many large content mods as possible, and avoiding mods that circumvent others.
+
+## Roadmap
+- Recipes for creative items, gated behind progression through most or all of the large content mods.
