@@ -104,6 +104,9 @@ onEvent('recipes', event => {
             plate: 'emendatusenigmatica:peridot_plate',
             rod: 'emendatusenigmatica:peridot_rod'
         }, {
+            name: 'obsidian',
+            dust: 'emendatusenigmatica:obsidian_dust'
+        }, {
             name: 'sapphire',
             gem: 'emendatusenigmatica:sapphire_gem',
             storage_block: 'emendatusenigmatica:sapphire_block',
@@ -329,13 +332,56 @@ onEvent('recipes', event => {
     // Bitumen
     event.replaceOutput('#forge:bitumen', 'emendatusenigmatica:bitumen_gem')
     event.replaceInput('#forge:bitumen', '#forge:bitumen')
+    event.replaceInput('immersivepetroleum:bitumen', '#forge:bitumen')
     // Slag
     event.replaceOutput('#forge:slag', 'thermal:slag')
     event.replaceInput('#forge:slag', '#forge:slag')
     // Dimensional Shards
     event.replaceOutput('rftoolsbase:dimensionalshard', 'emendatusenigmatica:dimensional_gem')
-    event.replaceInput('rftoolsbase:dimensionalshard', ['rftoolsbase:dimensionalshard', 'emendatusenigmatica:dimensional_shard'])
+    event.replaceInput('rftoolsbase:dimensionalshard', ['rftoolsbase:dimensionalshard', 'emendatusenigmatica:dimensional_gem'])
     // Silicon
     event.replaceOutput('#forge:silicon', 'emendatusenigmatica:silicon_gem')
     event.replaceInput('#forge:silicon', '#forge:silicon')
+    // Flour
+    event.replaceOutput('pneumaticcraft:wheat_flour', 'create:wheat_flour')
+    event.replaceOutput('pedestals:dustflour', 'create:wheat_flour')
+    event.replaceInput('pneumaticcraft:wheat_flour', 'create:wheat_flour')
+    event.replaceInput('pedestals:dustflour', 'create:wheat_flour')
+
+    { // Replace CCA rolling recipes
+        let additionsrecipes = [
+            'createaddition:rolling/copper_ingot',
+            'createaddition:rolling/brass_ingot',
+            'createaddition:rolling/gold_ingot',
+            'createaddition:rolling/iron_ingot',
+            'createaddition:rolling/steel_ingot',
+            'createaddition:rolling/copper_plate',
+            'createaddition:rolling/aluminum_ingot'
+        ]
+        
+        additionsrecipes.forEach(element => {
+            event.remove({id: element})
+        })
+
+        let additionscustoms = [
+            ['#forge:ingots/copper', 'emendatusenigmatica:copper_rod'],
+            ['#forge:ingots/brass', 'emendatusenigmatica:brass_rod'],
+            ['#forge:ingots/gold', 'emendatusenigmatica:gold_rod'],
+            ['#forge:ingots/iron', 'emendatusenigmatica:iron_rod'],
+            ['#forge:ingots/steel', 'emendatusenigmatica:steel_rod'],
+            ['#forge:plates/copper', 'immersiveengineering:wire_copper'],
+            ['#forge:ingots/aluminum', 'emendatusenigmatica:aluminum_rod']
+        ]
+        
+        additionscustoms.forEach(element => {
+            event.custom({
+                "type": "createaddition:rolling",
+                "input": element[0],
+                "result": {
+                    "item": element[1],
+                    "count": 2
+                }
+            })
+        })
+    }
 })
