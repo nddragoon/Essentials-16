@@ -1,3 +1,5 @@
 [management]
     "Inventory Sorting" = false
 
+[world]
+	"Big Stone Clusters" = false
