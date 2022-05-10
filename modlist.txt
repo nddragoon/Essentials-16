@@ -122,6 +122,7 @@ integratednbt-1.16.4-1.4.2.jar
 IntegratedTerminals-1.16.5-1.2.13.jar
 IntegratedTunnels-1.16.5-1.8.9.jar
 Interactio-1.16.4-3.1.1.jar
+inventorysorter-1.16.1-18.1.0.jar
 ironchest-1.16.5-11.2.21.jar
 IronJetpacks-1.16.5-4.2.3.jar
 item-filters-forge-1605.2.5-build.9.jar
