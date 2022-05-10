@@ -3,6 +3,7 @@
 [general]
 	#Spawn a book in the players inventory on login
 	spawnBook = false
-
+	genOre = false
+	crystallizer_output = "emendatusenigmatica:arcane_gem"
 
 
