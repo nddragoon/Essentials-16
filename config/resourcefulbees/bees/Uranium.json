@@ -1,0 +1,47 @@
+{
+    "flower": "tag:forge:storage_blocks/uranium",
+    "maxTimeInHive": 2400,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "ores/custom/custom_bee",
+    "traits": [
+        "nether"
+    ],
+    "ColorData": {
+        "isBeeColored": true,
+        "modelType": "ORE",
+        "honeycombColor": "#4c6444",
+        "secondaryColor": "#4c6444",
+        "primaryLayerTexture": "ores/custom/custom_bee_primary",
+        "secondaryLayerTexture": "ores/custom/custom_bee_secondary"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:stone",
+                "outputs": [
+                    {
+                        "outputID": "emendatusenigmatica:uranium_ore",
+                        "weight": 1
+                    },
+                    {
+                        "outputID": "minecraft:cobblestone",
+                        "weight": 2
+                    }
+                ]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "emendatusenigmatica:uranium_chunk",
+        "mainOutputWeight": 0.50
+    },
+    "BreedData": {
+        "isBreedable": false
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

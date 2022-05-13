@@ -1,0 +1,41 @@
+{
+    "flower": "tag:forge:storage_blocks/iron",
+    "hasHoneycomb": true,
+    "maxTimeInHive": 3600,
+    "baseLayerTexture": "ores/iron/iron_bee",
+    "traits": [
+        "nether"
+    ],
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "emendatusenigmatica:iron_chunk",
+        "mainOutputWeight": 0.5
+    },
+    "ColorData": {
+        "isBeeColored": false,
+        "modelType": "ORE",
+        "honeycombColor": "#dcc4b4"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:stone",
+                "outputs": [
+                    {
+                        "outputID": "emendatusenigmatica:iron_ore",
+                        "weight": 1
+                    },
+                    {
+                        "outputID": "minecraft:cobblestone",
+                        "weight": 2
+                    }
+                ]
+            }
+        ]
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

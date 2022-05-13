@@ -1,0 +1,32 @@
+{
+    "flower": "all",
+    "hasHoneycomb": true,
+    "maxTimeInHive": 3600,
+    "traits": [
+        "nether"
+    ],
+    "BreedData": {
+        "isBreedable": true
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:stone",
+        "secondaryOutput": "minecraft:clay_ball",
+        "secondaryOutputWeight": 0.5
+    },
+    "ColorData": {
+        "isBeeColored": true,
+        "honeycombColor": "#bcbcbc",
+        "secondaryColor": "#bcbcbc",
+        "primaryLayerTexture": "ores/custom/custom_bee_primary",
+        "secondaryLayerTexture": "ores/custom/custom_bee_secondary",
+        "modelType": "ORE"
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:mountain"
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

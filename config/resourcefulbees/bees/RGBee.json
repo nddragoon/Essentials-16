@@ -1,0 +1,22 @@
+{  
+    "flower": "ALL",  
+    "maxTimeInHive": 2400,  
+    "hasHoneycomb": true,  
+    "ColorData": {  
+    "isBeeColored": true,  
+        "honeycombColor": "#ffffff",  
+        "isRainbowBee": true,  
+        "isGlowing": true  
+    },
+    "CentrifugeData": {  
+        "hasCentrifugeOutput": false  
+    },  
+    "SpawnData": {  
+        "canSpawnInWorld": true,  
+        "biomeWhitelist": "TAG:OVerWorld",  
+        "biomeBlacklist": "tag:ocean"  
+    },  
+    "BreedData": {  
+        "isBreedable": true  
+    }
+  }

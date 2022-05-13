@@ -1,0 +1,41 @@
+{
+    "flower": "tag:forge:storage_blocks/diamond",
+    "hasHoneycomb": true,
+    "maxTimeInHive": 3600,
+    "baseLayerTexture": "ores/diamond/diamond_bee",
+    "traits": [
+        "nether"
+    ],
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "emendatusenigmatica:diamond_chunk",
+        "mainOutputWeight": 0.2
+    },
+    "ColorData": {
+        "isBeeColored": false,
+        "modelType": "ORE",
+        "honeycombColor": "#00e9f5"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:lava",
+                "outputs": [
+                    {
+                        "outputID": "minecraft:obsidian",
+                        "weight": 1
+                    },
+                    {
+                        "outputID": "minecraft:cobblestone",
+                        "weight": 2
+                    }
+                ]
+            }
+        ]
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}
