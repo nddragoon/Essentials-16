@@ -23,7 +23,7 @@
             }
         ]
     },
-    "centrifugeData": {
+    "CentrifugeData": {
         "hasCentrifugeOutput": true,
         "mainOutput": "minecraft:sand",
         "mainInputCount": 4,
