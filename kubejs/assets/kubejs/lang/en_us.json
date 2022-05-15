@@ -1,0 +1,9 @@
+{
+    "item.kubejs.ritual_dummy.craft_iron_bee": "Ritual: Craft Iron Bee",
+    "item.kubejs.ritual_dummy.craft_iron_bee.tooltip": "The Iron Bee is the base for most others",
+    "ritual.kubejs.ritual/craft_iron_bee.conditions": "Not all requirements for this ritual are met.",
+    "ritual.kubejs.ritual/craft_iron_bee.finished": "Crafted Iron Bee successfully.",
+    "ritual.kubejs.ritual/craft_iron_bee.interrupted": "Crafting of Iron Bee interrupted.",
+    "ritual.kubejs.ritual/craft_iron_bee.started": "Started crafting Iron Bee.",
+    "ritual.occultism.sacrifice.iron_golem": "Iron Golem"
+}
