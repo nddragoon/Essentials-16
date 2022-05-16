@@ -3,7 +3,7 @@
     "maxTimeInHive": 2400,  
     "hasHoneycomb": true,  
     "ColorData": {  
-    "isBeeColored": true,  
+        "isBeeColored": true,  
         "honeycombColor": "#ffffff",  
         "isRainbowBee": true,  
         "isGlowing": true  
@@ -13,7 +13,7 @@
     },  
     "SpawnData": {  
         "canSpawnInWorld": true,  
-        "biomeWhitelist": "TAG:OVerWorld",  
+        "biomeWhitelist": "TAG:OverWorld",  
         "biomeBlacklist": "tag:ocean"  
     },  
     "BreedData": {  

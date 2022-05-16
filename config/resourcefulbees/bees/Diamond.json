@@ -32,6 +32,15 @@
                         "weight": 2
                     }
                 ]
+            },
+            {
+                "type": "ENTITY",
+                "inputID": "resourcefulbees:slimy_bee",
+                "outputs": [
+                    {
+                        "outputID": "resourcefulbees:ender_bee"
+                    }
+                ]
             }
         ]
     },
