@@ -1,5 +1,14 @@
 // priority: 1000
 
+onEvent('item.tags', event => {
+    event.add('create:upright_on_belt', [
+        'resourcefulbees:bee_jar',
+        'kubejs:incomplete_slimy_bee',
+        'kubejs:incomplete_lead_bee',
+        'kubejs:incomplete_osmium_bee'
+    ])
+})
+
 onEvent('entity_type.tags', event => {
     event.add('forge:golems/iron', 'minecraft:iron_golem')
 })

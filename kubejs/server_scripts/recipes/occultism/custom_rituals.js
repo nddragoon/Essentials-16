@@ -6,7 +6,7 @@ onEvent('recipes', event => {
         "activation_item": {
             "item": "resourcefulbees:bee_jar"
         },
-        "pentacle_id": "occultism:craft_djinni",
+        "pentacle_id": "occultism:craft_marid",
         "duration": 10,
         "entity_to_sacrifice": {
             "tag": "forge:golems/iron",
