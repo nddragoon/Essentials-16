@@ -12,7 +12,16 @@
         "hasMutation": true,  
         "mutationInput": "minecraft:netherrack",  
         "mutationOutput": "minecraft:glowstone",  
-        "mutationType": "BLOCK_TO_BLOCK"  
+        "mutationType": "BLOCK_TO_BLOCK",
+        "mutations": [
+            {
+                "type": "ENTITY",
+                "inputID": "resourcefulbees:diamond_bee",
+                "outputs": [{
+                    "outputID": "resourcefulbees:quartz_bee"
+                }]
+            }
+        ]
     },  
     "CentrifugeData": {  
         "hasCentrifugeOutput": true,  
