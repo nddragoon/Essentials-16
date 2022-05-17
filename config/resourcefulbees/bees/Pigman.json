@@ -20,6 +20,13 @@
                 "outputs": [{
                     "outputID": "resourcefulbees:quartz_bee"
                 }]
+            },
+            {
+                "type": "ENTITY",
+                "inputID": "resourcefulbees:iron_bee",
+                "outputs": [{
+                    "outputID": "resourcefulbees:gold_bee"
+                }]
             }
         ]
     },  
