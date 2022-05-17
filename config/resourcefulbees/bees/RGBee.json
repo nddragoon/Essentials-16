@@ -18,5 +18,19 @@
     },  
     "BreedData": {  
         "isBreedable": true  
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutations": [
+            {
+                "type": "ENTITY",
+                "inputID": "resourcefulbees:coal_bee",
+                "outputs": [
+                    {
+                        "outputID": "resourcefulbees:lapis_bee"
+                    }
+                ]
+            }
+        ]
     }
   }
