@@ -40,4 +40,20 @@ onEvent('recipes', event => {
             nbt: {"Entity":"resourcefulbees:netherite_bee"}
         }
     )
+    fusionCrafting(
+        100000000,
+        Item.of('resourcefulbees:bee_jar', {"Entity":"resourcefulbees:ender_bee"}).weakNBT().toJson(),
+        [
+            'minecraft:dragon_egg',
+            'betterendforge:aeternium_block',
+            'minecraft:elytra',
+            'minecraft:dragon_head',
+            'draconicevolution:dragon_heart'
+        ],
+        'WYVERN',
+        {
+            item: 'resourcefulbees:bee_jar',
+            nbt: {"Entity":"resourcefulbees:dragon_bee"}
+        }
+    )
 })

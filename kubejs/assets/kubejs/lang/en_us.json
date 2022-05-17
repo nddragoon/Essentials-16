@@ -1,4 +1,7 @@
 {
+    "item.kubejs.incomplete_lead_bee": "Incomplete Lead Bee",
+    "item.kubejs.incomplete_osmium_bee": "Incomplete Osmium Bee",
+    "item.kubejs.incomplete_slimy_bee": "Incomplete Slimy Bee",
     "item.kubejs.ritual_dummy.craft_emerald_bee": "Ritual: Craft Emerald Bee",
     "item.kubejs.ritual_dummy.craft_emerald_bee.tooltip": "Produces emeralds",
     "item.kubejs.ritual_dummy.craft_iron_bee": "Ritual: Craft Iron Bee",
