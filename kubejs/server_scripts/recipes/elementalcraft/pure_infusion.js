@@ -9,8 +9,7 @@ onEvent('recipes', event => {
         pedestal_items = [water, fire, earth, air]
         pedestal_items.forEach(item => {
             if (item.charAt() == '#') {
-                item = item.slice(1)
-                ingredients.push({tag: item})
+                ingredients.push({tag: item.slice(1)})
             } else {
                 ingredients.push({item:item})
             }
