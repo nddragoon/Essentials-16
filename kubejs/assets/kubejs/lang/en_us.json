@@ -1,9 +1,16 @@
 {
+    "item.kubejs.ritual_dummy.craft_emerald_bee": "Ritual: Craft Emerald Bee",
+    "item.kubejs.ritual_dummy.craft_emerald_bee.tooltip": "Produces emeralds",
     "item.kubejs.ritual_dummy.craft_iron_bee": "Ritual: Craft Iron Bee",
     "item.kubejs.ritual_dummy.craft_iron_bee.tooltip": "The Iron Bee is the base for most others",
+    "ritual.kubejs.ritual/craft_emerald_bee.conditions": "Not all requirements for this ritual are met.",
+    "ritual.kubejs.ritual/craft_emerald_bee.finished": "Crafted Emerald Bee successfully.",
+    "ritual.kubejs.ritual/craft_emerald_bee.interrupted": "Crafting of Emerald Bee interrupted.",
+    "ritual.kubejs.ritual/craft_emerald_bee.started": "Started crafting Emerald Bee.",
     "ritual.kubejs.ritual/craft_iron_bee.conditions": "Not all requirements for this ritual are met.",
     "ritual.kubejs.ritual/craft_iron_bee.finished": "Crafted Iron Bee successfully.",
     "ritual.kubejs.ritual/craft_iron_bee.interrupted": "Crafting of Iron Bee interrupted.",
     "ritual.kubejs.ritual/craft_iron_bee.started": "Started crafting Iron Bee.",
-    "ritual.occultism.sacrifice.iron_golem": "Iron Golem"
+    "ritual.occultism.sacrifice.iron_golem": "Iron Golem",
+    "ritual.occultism.sacrifice.wandering_trader": "Wandering Trader"
 }

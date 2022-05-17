@@ -11,6 +11,7 @@ onEvent('item.tags', event => {
 
 onEvent('entity_type.tags', event => {
     event.add('forge:golems/iron', 'minecraft:iron_golem')
+    event.add('kubejs:wandering_trader', 'minecraft:wandering_trader')
 })
 
 onEvent('tags.fluids', event => {
