@@ -1,0 +1,21 @@
+{
+	id: "1883FB6A5942982F"
+	group: ""
+	order_index: 0
+	filename: "tips__tricks_2"
+	title: "Tips \\& Tricks"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		shape: "square"
+		description: ["The Market is an incredibly handy block that allows you to buy seeds, saplings, etc. using emeralds."]
+		id: "6F07577778220B16"
+		tasks: [{
+			id: "54B833E77F328115"
+			type: "item"
+			item: "farmingforblockheads:market"
+		}]
+	}]
+}
