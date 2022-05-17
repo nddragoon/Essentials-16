@@ -1,0 +1,38 @@
+{
+    "flower": "tag:forge/storage_blocks/lapis",
+    "maxTimeInHive": 3600,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "ores/lapis/lapis_bee",
+    "traits": ["nether"],
+    "ColorData": {
+        "isBeeColored": false,
+        "honeycombColor": "#345ec3",
+        "modelType": "ORE"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:stone",
+                "outputs": [
+                    {
+                        "outputID": "emendatusenigmatica:lapis_ore",
+                        "weight": 1
+                    },
+                    {
+                        "outputID": "minecraft:cobblestone",
+                        "weight": 2
+                    }
+                ]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "emendatusenigmatica:lapis_chunk"
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

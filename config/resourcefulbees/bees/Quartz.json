@@ -1,0 +1,45 @@
+{
+    "flower": "tag:forge:storage_blocks/quartz",
+    "hasHoneycomb": true,
+    "maxTimeInHive": 3600,
+    "baseLayerTexture": "quartz_bee",
+    "traits": [
+        "nether"
+    ],
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "emendatusenigmatica:quartz_chunk",
+        "mainOutputWeight": 0.5
+    },
+    "ColorData": {
+        "isBeeColored": false,
+        "modelType": "ORE",
+        "honeycombColor": "#bcbcbc"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:netherrack",
+                "outputs": [
+                    {
+                        "outputID": "emendatusenigmatica:quartz_netherrack_ore",
+                        "weight": 1
+                    },
+                    {
+                        "outputID": "minecraft:crimson_nylium",
+                        "weight": 1
+                    },
+                    {
+                        "outputID": "minecraft:warped_nylium",
+                        "weight": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

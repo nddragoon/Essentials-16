@@ -1,0 +1,33 @@
+{
+    "flower": "tag:forge:sandstone",
+    "hasHoneycomb": true,
+    "maxTimeInHive": 2400,
+    "baseLayerTexture": "natural/sandy_bee",
+    "ColorData": {
+        "isBeeColored": false,
+        "honeycombColor": "#f7eabf",
+        "modelType": "CROP"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutations": [
+            {
+                "type": "BLOCK_TO_BLOCK",
+                "inputID": "tag:minecraft:sand",
+                "outputs": [
+                    {
+                        "outputID": "minecraft:glass",
+                        "chance": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:sand",
+        "mainInputCount": 4,
+        "secondaryOutput": "minecraft:glass",
+        "mainOutputWeight": 0.2
+    }
+}

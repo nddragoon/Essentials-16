@@ -1,0 +1,50 @@
+{  
+    "flower": "minecraft:brown_mushroom",  
+    "maxTimeInHive": 36000,  
+    "hasHoneycomb": true,  
+    "baseLayerTexture": "pigman/pigman_bee",  
+    "traits": ["nether", "pigman"],  
+    "ColorData": {  
+        "isBeeColored": false,  
+        "honeycombColor": "#885956"  
+    },  
+    "MutationData": {  
+        "hasMutation": true,  
+        "mutationInput": "minecraft:netherrack",  
+        "mutationOutput": "minecraft:glowstone",  
+        "mutationType": "BLOCK_TO_BLOCK",
+        "mutations": [
+            {
+                "type": "ENTITY",
+                "inputID": "resourcefulbees:diamond_bee",
+                "outputs": [{
+                    "outputID": "resourcefulbees:quartz_bee"
+                }]
+            },
+            {
+                "type": "ENTITY",
+                "inputID": "resourcefulbees:iron_bee",
+                "outputs": [{
+                    "outputID": "resourcefulbees:gold_bee"
+                }]
+            }
+        ]
+    },  
+    "CentrifugeData": {  
+        "hasCentrifugeOutput": true,  
+        "mainOutput": "minecraft:rotten_flesh",
+        "secondaryOutput": "minecraft:gold_nugget",
+        "secondaryOutputWeight": 0.2
+    },  
+    "SpawnData": {  
+        "canSpawnInWorld": true,  
+        "biomeWhitelist": "tag:nether",  
+        "lightLevel": "ANY"  
+    },  
+    "BreedData": {  
+        "isBreedable": true  
+    },  
+    "TraitData": {  
+        "hasTraits": true  
+    }  
+  }

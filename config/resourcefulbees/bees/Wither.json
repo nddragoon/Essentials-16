@@ -1,0 +1,24 @@
+{
+    "flower": "minecraft:wither_rose",
+    "maxTimeInHive": 3600,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "wither/wither_bee",
+    "traits": [
+        "nether",
+        "wither"
+    ],
+    "ColorData": {
+        "isBeeColored": false,
+        "honeycombColor": "#444444"
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:wither_skeleton_skull",
+        "mainOutputWeight": 0.1,
+        "secondaryOutput": "minecraft:soul_sand",
+        "secondaryOutputWeight": 0.5
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

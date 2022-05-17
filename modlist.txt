@@ -168,6 +168,7 @@ mowziesmobs-1.5.24.jar
 MythicBotany-1.16.5-1.4.19.jar
 NaturesAura-34.3.jar
 NaturesCompass-1.16.5-1.9.1-forge.jar
+NBT-Ingredient-Predicate-1.3.jar
 Neat 1.7-27.jar
 nethers_delight-2.1.jar
 observable-0.2.1-forge.jar
@@ -228,6 +229,7 @@ SoL-Carrot-1.16.5-1.10.1.jar
 sophisticatedbackpacks-1.16.5-3.15.13.560.jar
 spark-1.9.1-forge.jar
 StorageDrawers-1.16.3-8.5.2.jar
+structure_gel-1.16.5-1.7.8.jar
 supermartijn642configlib-1.0.9-mc1.16.jar
 supermartijn642corelib-1.0.18-forge-mc1.16.5.jar
 supplementaries-1.16.5-0.18.4.jar

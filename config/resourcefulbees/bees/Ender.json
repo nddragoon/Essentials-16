@@ -1,0 +1,28 @@
+{
+    "flower": "minecraft:chorus_flower",
+    "hasHoneycomb": true,
+    "traits": [
+        "ender"
+    ],
+    "maxTimeInHive": 1800,
+    "ColorData": {
+        "isBeeColored": true,
+        "honeycombColor": "#339786",
+        "primaryColor": "#339786",
+        "secondaryColor": "#303030"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationInput": "minecraft:cobblestone",
+        "mutationOutput": "minecraft:end_stone",
+        "mutationType": "BLOCK_TO_BLOCK"
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:ender_pearl",
+        "bottleOutput": "minecraft:dragon_breath"
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

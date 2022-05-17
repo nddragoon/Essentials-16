@@ -1,0 +1,25 @@
+{
+    "flower": "tag:forge:storage_blocks/emerald",
+    "maxTimeInHive": 3600,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "ores/emerald/emerald_bee",
+    "traits": [
+        "nether"
+    ],
+    "ColorData": {
+        "isBeeColored": false,
+        "modelType": "ORE",
+        "honeycombColor": "#66d330"
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "emendatusenigmatica:emerald_chunk",
+        "mainOutputWeight": 0.20
+    },
+    "BreedData": {
+        "isBreedable": false
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

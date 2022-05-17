@@ -1,0 +1,30 @@
+{
+    "flower": "minecraft:slime_block",
+    "hasHoneycomb": true,
+    "traits": [
+        "slimy"
+    ],
+    "maxTimeInHive": 3600,
+    "baseLayerTexture": "slime/slime_bee",
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:slime_ball",
+        "secondaryOutput": "refinedstorage:processor_binding",
+        "secondaryOutputWeight": 0.05
+    },
+    "ColorData": {
+        "modelType": "GELATINOUS",
+        "gelLayerTexture": "/slime/slime_gel_Layer",
+        "honeycombColor": "#8bd683"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationInput": "minecraft:honey_block",
+        "mutationOutput": "minecraft:slime_block",
+        "mutationType": "BLOCK_TO_BLOCK",
+        "mutationCount": 15
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

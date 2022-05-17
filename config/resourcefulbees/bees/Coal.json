@@ -1,0 +1,39 @@
+{
+    "flower": "tag:forge:storage_blocks/coal",
+    "hasHoneycomb": true,
+    "traits": ["nether"],
+    "maxTimeInHive": 3600,
+    "baseLayerTexture": "ores/coal/coal_bee",
+    "TraitData": {
+        "hasTraits": true
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "emendatusenigmatica:coal_chunk",
+        "mainOutputWeight": 0.75
+    },
+    "ColorData": {
+        "isBeeColored": false,
+        "honeycombColor": "#323232",
+        "modelType": "ORE"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:stone",
+                "outputs": [
+                    {
+                        "outputID": "emendatusenigmatica:coal_ore",
+                        "weight": 1
+                    },
+                    {
+                        "outputID": "minecraft:cobblestone",
+                        "weight": 2
+                    }
+                ]
+            }
+        ]
+    }
+}

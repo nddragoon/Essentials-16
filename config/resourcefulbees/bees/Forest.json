@@ -1,0 +1,14 @@
+{
+    "flower": "all",
+    "hasHoneycomb": true,
+    "maxTimeInHive": 2400,
+    "baseLayerTexture": "forest_bee",
+    "CentrifugeData": {
+        "hasCentrifugeOutput": false
+    },
+    "ColorData": {
+        "isBeeColored": false,
+        "honeycombColor": "#947e42",
+        "modelType": "CROP"
+    }
+}

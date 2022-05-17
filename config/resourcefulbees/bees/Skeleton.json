@@ -1,0 +1,29 @@
+{
+    "flower": "minecraft:bone_block",
+    "maxTimeInHive": 3600,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "skeleton/skeleton_bee",
+    "ColorData": {
+        "isBeeColored": false,
+        "honeycombColor": "#F6F2E6"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationInput": "minecraft:stone",
+        "mutationOutput": "minecraft:gravel",
+        "mutationType": "BLOCK_TO_BLOCK"
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:bone"
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:NETHER",
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "xreliquary:rib_bone"
+    }
+}

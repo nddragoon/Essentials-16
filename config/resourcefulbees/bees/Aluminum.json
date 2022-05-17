@@ -1,0 +1,47 @@
+{
+    "flower": "tag:forge:storage_blocks/aluminum",
+    "maxTimeInHive": 3600,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "ores/custom/custom_bee",
+    "traits": [
+        "nether"
+    ],
+    "ColorData": {
+        "isBeeColored": true,
+        "modelType": "ORE",
+        "honeycombColor": "#ebf2f8",
+        "secondaryColor": "#ebf2f8",
+        "primaryLayerTexture": "ores/custom/custom_bee_primary",
+        "secondaryLayerTexture": "ores/custom/custom_bee_secondary"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:stone",
+                "outputs": [
+                    {
+                        "outputID": "emendatusenigmatica:aluminum_ore",
+                        "weight": 1
+                    },
+                    {
+                        "outputID": "minecraft:cobblestone",
+                        "weight": 2
+                    }
+                ]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "emendatusenigmatica:aluminum_chunk",
+        "mainOutputWeight": 0.50
+    },
+    "BreedData": {
+        "isBreedable": false
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}
