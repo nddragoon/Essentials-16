@@ -6,15 +6,1494 @@
 	title: "Occultism"
 	icon: "occultism:ritual_dummy/custom_ritual"
 	default_quest_shape: ""
-	default_hide_dependency_lines: false
-	quests: [{
-		x: 0.0d
-		y: 0.0d
-		id: "7CE36BF4CA988396"
-		tasks: [{
-			id: "1E37EC9627B23A45"
-			type: "item"
-			item: "occultism:datura_seeds"
-		}]
-	}]
+	default_hide_dependency_lines: true
+	quests: [
+		{
+			title: "Getting Started"
+			x: 0.0d
+			y: -0.75d
+			shape: "rsquare"
+			subtitle: "\"Magicians are widely known as powerful wielders of magic. In truth, however, they rely on summoned spirit slaves, known as demons, who perform magic on their behalf.\""
+			description: [
+				"Your journey with Occultism begins by breaking grass and obtaining Demon's Dream Seeds."
+				"These can be planted like any others, and yield Demon's Dream Fruit when harvested."
+			]
+			size: 1.5d
+			id: "7CE36BF4CA988396"
+			tasks: [
+				{
+					id: "1E37EC9627B23A45"
+					type: "item"
+					item: "occultism:datura_seeds"
+				}
+				{
+					id: "75E17FBC75B553E6"
+					type: "item"
+					item: "occultism:datura"
+				}
+			]
+			rewards: [{
+				id: "42849A8C86EB9AF2"
+				type: "item"
+				item: "occultism:datura"
+				count: 5
+			}]
+		}
+		{
+			title: "Buy Otherworldly"
+			x: 0.0d
+			y: 1.0d
+			description: [
+				"To progress, you'll need to obtain Otherstone and Otherworld Wood."
+				"These can be obtained in Otherworld Groves throughout the world under the effect of the Demon's Dream Fruit, or through Spirit Fire."
+				"To start a Spirit Fire, throw a Demon's Dream Fruit on the ground and light it on fire. Doing this on Netherrack also means it'll stay lit forever."
+				"This fire will transform Andesite into Otherstone and Oak Saplings into Unstable Otherworld Saplings, which can only be harvested with the Third Eye effect."
+			]
+			hide_dependency_lines: false
+			dependencies: ["7CE36BF4CA988396"]
+			size: 1.25d
+			id: "19AD6ABF43920C26"
+			tasks: [
+				{
+					id: "10A482DEB54E84FA"
+					type: "item"
+					item: {
+						id: "occultism:otherworld_sapling_natural"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "51BDE582D1F295ED"
+					type: "item"
+					item: "occultism:otherstone"
+				}
+				{
+					id: "098A08926E06A24B"
+					type: "item"
+					item: "occultism:otherworld_log"
+				}
+			]
+			rewards: [{
+				id: "1C4B14C8283EEAEB"
+				type: "item"
+				item: "minecraft:netherrack"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			shape: "pentagon"
+			description: [
+				"Chalk is the real base of magic in Occultism. It allows you to draw circles named pentacles, which are used to summon and bind spirits."
+				"Pentacles are composed of chalk symbols, sacrificial bowls to hold items, and various blocks like candles. You can find the guide to build every pentacle in your Dictionary of Spirits."
+				"When drawing a pentacle, if you want to decorate, you can cycle between symbols without wasting durability by right clicking on them with the chalk again."
+			]
+			hide_dependency_lines: false
+			dependencies: ["19AD6ABF43920C26"]
+			size: 1.25d
+			id: "59AFE37875287A3B"
+			tasks: [{
+				id: "45AB356F3FC7F03E"
+				type: "item"
+				item: {
+					id: "occultism:chalk_white"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "5D9F9036D300602D"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			shape: "pentagon"
+			description: [
+				"This is where the fun really starts."
+				"The Golden Chalk will allow you to draw more different pentacles, letting you manipulate Djinn and more powerful Foliot, letting you bind spirits into items and summon familiars and possessed monsters."
+			]
+			hide_dependency_lines: false
+			dependencies: ["59AFE37875287A3B"]
+			hide: false
+			size: 1.25d
+			id: "457C681DC673219D"
+			tasks: [{
+				id: "2B9E07390C036F1F"
+				type: "item"
+				item: {
+					id: "occultism:chalk_gold"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "09F761FD0B438B4D"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			x: 0.0d
+			y: 10.0d
+			shape: "pentagon"
+			hide_dependency_lines: false
+			dependencies: ["457C681DC673219D"]
+			size: 1.25d
+			id: "74FC4ECB5275A639"
+			tasks: [{
+				id: "6BC22715CD90828D"
+				type: "item"
+				item: {
+					id: "occultism:chalk_purple"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 14.0d
+			shape: "pentagon"
+			description: ["Red Chalk will allow you to manipulate even the most powerful of spirits. Get ready to draw some big pentacles."]
+			hide_dependency_lines: false
+			dependencies: ["74FC4ECB5275A639"]
+			size: 1.25d
+			id: "62A8453C6B6A8B93"
+			tasks: [{
+				id: "4C8D4495B65A354C"
+				type: "item"
+				item: {
+					id: "occultism:chalk_red"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			description: ["The Butcher Knife allows you to get Tallow for candles on killing passive mobs."]
+			hide_dependency_lines: false
+			dependencies: ["59AFE37875287A3B"]
+			id: "20CC8CA997B3A022"
+			tasks: [
+				{
+					id: "56A1A059BC740DFA"
+					type: "item"
+					item: {
+						id: "occultism:butcher_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6EBEB1D0CD2F1603"
+					type: "item"
+					item: "occultism:tallow"
+				}
+			]
+			rewards: [{
+				id: "6BCA70F8CFABD723"
+				type: "item"
+				item: "occultism:tallow"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			hide_dependency_lines: false
+			dependencies: ["20CC8CA997B3A022"]
+			id: "6EFA011FFEA0D6AC"
+			tasks: [{
+				id: "486EA0552AED3CDC"
+				type: "item"
+				item: "occultism:candle_white"
+			}]
+			rewards: [{
+				id: "008604CB2ED0C5C4"
+				type: "item"
+				item: "occultism:tallow"
+				count: 2
+			}]
+		}
+		{
+			x: -1.5d
+			y: 2.0d
+			description: [
+				"These can be placed up to 8 blocks from the center of your pentacle."
+				"They're used to hold the ingredients to your rituals."
+			]
+			hide_dependency_lines: false
+			dependencies: ["59AFE37875287A3B"]
+			id: "298AC019B5CB4F18"
+			tasks: [{
+				id: "5DB1B39280CC2EB4"
+				type: "item"
+				item: "occultism:sacrificial_bowl"
+			}]
+			rewards: [{
+				id: "65B626EBF05F329D"
+				type: "item"
+				item: "occultism:otherstone"
+				count: 5
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			description: [
+				"The Golden Sacrificial Bowl goes at the center of pentacles."
+				"It's what takes the activation item for rituals, once all the other ingredients have been placed on the other bowls."
+			]
+			hide_dependency_lines: false
+			dependencies: ["298AC019B5CB4F18"]
+			id: "303F5ECD7D23B21A"
+			tasks: [{
+				id: "1D84617949ADCCB0"
+				type: "item"
+				item: "occultism:golden_sacrificial_bowl"
+			}]
+			rewards: [{
+				id: "714D0FE9ED064ED3"
+				type: "item"
+				item: "occultism:sacrificial_bowl"
+				count: 2
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.5d
+			description: ["Allows you to instantly remove chalk from the floor."]
+			hide_dependency_lines: true
+			dependencies: ["59AFE37875287A3B"]
+			id: "7FA7FF44D7A71CA0"
+			tasks: [{
+				id: "2CE007EE5C188F9D"
+				type: "item"
+				item: "occultism:brush"
+			}]
+			rewards: [{
+				id: "252E0344B3E2A9FF"
+				type: "item"
+				item: "minecraft:wet_sponge"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 2.5d
+			description: [
+				"You should now have what you need to draw your first pentacle: Aviar's Circle."
+				"It allows you to summon and bind Foliots."
+			]
+			hide_dependency_lines: false
+			dependencies: [
+				"6EFA011FFEA0D6AC"
+				"303F5ECD7D23B21A"
+			]
+			id: "509327C07FFECBC3"
+			tasks: [
+				{
+					id: "6AFE54D5F70014DA"
+					type: "item"
+					item: "occultism:book_of_binding_foliot"
+				}
+				{
+					id: "76CCA1A947BA4905"
+					type: "item"
+					item: {
+						id: "occultism:book_of_binding_bound_foliot"
+						Count: 1b
+						tag: {
+							spiritName: "Crozeraeus"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Otherworld Sapling Trader"
+			x: 1.5d
+			y: 1.5d
+			shape: "square"
+			description: ["The Otherworld Sapling Trader will give you stable Otherworld Saplings in exchange for the unstable ones you've made. Stable saplings can be seen and harvested without the Third Eye effect."]
+			hide_dependency_lines: true
+			dependencies: ["59AFE37875287A3B"]
+			id: "315F4A8B25267275"
+			tasks: [{
+				id: "697C2FC2D9AC39D3"
+				type: "item"
+				item: "occultism:otherworld_sapling"
+			}]
+			rewards: [{
+				id: "4780B5619775DDB7"
+				type: "item"
+				item: "occultism:lenses"
+			}]
+		}
+		{
+			title: "Otherstone Trader"
+			x: 1.5d
+			y: 2.5d
+			shape: "square"
+			description: ["The Otherstone Trader will give you Otherstone in exchange for normal stone, with a much higher return than burning it."]
+			hide_dependency_lines: true
+			dependencies: ["59AFE37875287A3B"]
+			id: "072E486061571455"
+			tasks: [{
+				id: "79641FE42FD6BEFD"
+				type: "item"
+				item: "occultism:otherstone"
+				count: 128L
+			}]
+			rewards: [{
+				id: "0365D49F2A65E738"
+				type: "item"
+				item: "minecraft:stone"
+				count: 64
+			}]
+		}
+		{
+			title: "Foliot Janitor"
+			x: 2.5d
+			y: 1.5d
+			shape: "square"
+			description: [
+				"The Foliot Janitor will collect items within its work area and deposit them into an inventory."
+				"You can set its work area and target inventory with its book of calling."
+				"To manage its filters, shift right click it."
+			]
+			hide_dependency_lines: true
+			dependencies: ["59AFE37875287A3B"]
+			id: "5E9CE9ACB557E462"
+			tasks: [{
+				id: "52BF204BD26E723B"
+				type: "item"
+				item: {
+					id: "occultism:book_of_calling_foliot_cleaner"
+					Count: 1b
+					tag: {
+						spiritName: "Reimirid"
+					}
+				}
+			}]
+			rewards: [{
+				id: "711F6F20C6B04E28"
+				type: "item"
+				item: "ars_nouveau:carbuncle_shards"
+			}]
+		}
+		{
+			title: "Foliot Crusher"
+			x: 1.5d
+			y: 3.5d
+			shape: "square"
+			description: [
+				"The Foliot Crusher will crush ores given to it into dust, doubling them."
+				"As a low level spirit, it works quite slowly."
+			]
+			hide_dependency_lines: true
+			dependencies: ["59AFE37875287A3B"]
+			id: "54BEC13740976688"
+			tasks: [{
+				id: "15AEB5959AE6FC24"
+				type: "item"
+				item: "emendatusenigmatica:gold_dust"
+			}]
+			rewards: [{
+				id: "32ED9FF61CEA12B7"
+				type: "item"
+				item: "emendatusenigmatica:gold_dust"
+				count: 2
+			}]
+		}
+		{
+			title: "Foliot Transporter"
+			x: 2.5d
+			y: 2.5d
+			shape: "square"
+			description: [
+				"The Foliot Transporter will move items from one inventory to another."
+				"You can select its source and target inventories with its book of calling."
+			]
+			hide_dependency_lines: true
+			dependencies: ["59AFE37875287A3B"]
+			id: "02C8653AE1E9461B"
+			tasks: [{
+				id: "030A0594EE6FE0D8"
+				type: "item"
+				item: {
+					id: "occultism:book_of_calling_foliot_transport_items"
+					Count: 1b
+					tag: {
+						spiritName: "Rairder"
+					}
+				}
+			}]
+			rewards: [{
+				id: "681FEA40DDDEBDC6"
+				type: "item"
+				item: "minecraft:chest"
+				count: 2
+			}]
+		}
+		{
+			title: "Foliot Lumberjack"
+			x: 2.5d
+			y: 3.5d
+			shape: "square"
+			description: [
+				"The Foliot Lumberjack will harvest trees in its work area and deposit the items into an inventory."
+				"You can set its work area and target inventory with its book of calling."
+			]
+			hide_dependency_lines: true
+			dependencies: ["59AFE37875287A3B"]
+			id: "39570E83EDE5CC76"
+			tasks: [{
+				id: "50832F177A35B806"
+				type: "item"
+				item: {
+					id: "occultism:book_of_calling_foliot_lumberjack"
+					Count: 1b
+					tag: {
+						spiritName: "Marlorimur"
+					}
+				}
+			}]
+			rewards: [{
+				id: "5BA1086CE3611446"
+				type: "item"
+				item: {
+					id: "occultism:otherworld_sapling_natural"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: 5.5d
+			hide_dependency_lines: false
+			dependencies: ["457C681DC673219D"]
+			id: "76C76B80C2682A77"
+			tasks: [{
+				id: "012B6A1D07089E3F"
+				type: "item"
+				item: "occultism:spirit_attuned_gem"
+			}]
+			rewards: [{
+				id: "5FDD5920A6A552EB"
+				type: "item"
+				item: "occultism:spirit_attuned_gem"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 5.5d
+			description: ["Spirit Attuned Crystals will allow your pentacles to permanently bind spirits into items."]
+			hide_dependency_lines: false
+			dependencies: ["76C76B80C2682A77"]
+			id: "0FEA5D5098563CAC"
+			tasks: [{
+				id: "7DAF80677311DD9C"
+				type: "item"
+				item: "occultism:spirit_attuned_crystal"
+			}]
+		}
+		{
+			title: "Otherworld Goggles"
+			x: 1.5d
+			y: 7.0d
+			shape: "square"
+			description: ["These goggles will let you more easily find Otherworld Groves and let you mine Iesnium in the Nether."]
+			hide_dependency_lines: true
+			dependencies: ["0FEA5D5098563CAC"]
+			id: "3E7FA908D792CB4F"
+			tasks: [
+				{
+					id: "1398CAD9B8134E7E"
+					type: "item"
+					item: "occultism:infused_lenses"
+				}
+				{
+					id: "44E195162DF5B67F"
+					type: "item"
+					item: {
+						id: "occultism:otherworld_goggles"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "1BFDA241B8F3131E"
+				type: "item"
+				item: {
+					id: "occultism:otherworld_sapling_natural"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 6.0d
+			shape: "square"
+			description: ["This is one part of the Dimensional Storage Actuator, Occultism's storage system."]
+			hide_dependency_lines: true
+			dependencies: ["0FEA5D5098563CAC"]
+			id: "3F3FC7F6D49000CE"
+			tasks: [{
+				id: "39DA448A53E1C73F"
+				type: "item"
+				item: "occultism:storage_controller_base"
+			}]
+			rewards: [{
+				id: "374D0AD5C15737A6"
+				type: "item"
+				item: "occultism:otherstone_pedestal"
+			}]
+		}
+		{
+			title: "Stable Wormhole"
+			icon: {
+				id: "occultism:stable_wormhole"
+				Count: 1b
+				tag: { }
+			}
+			x: 2.5d
+			y: 5.0d
+			shape: "square"
+			description: ["When linked to a Dimensional Storage Actuator, this acts as a mirror for it. You can access your storage, pipe items in and out, etc."]
+			hide_dependency_lines: true
+			dependencies: ["0FEA5D5098563CAC"]
+			id: "37C0AED8F3F34DA2"
+			tasks: [
+				{
+					id: "7F9F4CE12AB5C0B6"
+					type: "item"
+					item: "occultism:wormhole_frame"
+				}
+				{
+					id: "52FFE23303265F04"
+					type: "item"
+					item: {
+						id: "occultism:stable_wormhole"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 5.0d
+			shape: "square"
+			description: [
+				"Dimensional Storage stores items in stacks of 1024. Adding Dimensional Storage Stabilizers facing the matrix of your Actuator, you can raise the maximum amount of stacks it can store."
+				"Tip: One stabilizer can buff up to 5 Actuators at once."
+			]
+			hide_dependency_lines: true
+			dependencies: ["0FEA5D5098563CAC"]
+			id: "421FBDDF13F75BE6"
+			tasks: [{
+				id: "2603859D27FAC0FD"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier1"
+			}]
+			rewards: [{
+				id: "50EA1CDEFD2F4917"
+				type: "item"
+				item: "occultism:spirit_attuned_gem"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 6.0d
+			shape: "square"
+			description: [
+				"This is a massive inventory you can carry with you."
+				"You can equip it as a curio and open it at any time pressing B."
+			]
+			hide_dependency_lines: true
+			dependencies: ["0FEA5D5098563CAC"]
+			id: "5A28E01458F7EE8C"
+			tasks: [{
+				id: "44DD52D47F63D784"
+				type: "item"
+				item: {
+					id: "occultism:satchel"
+					Count: 1b
+					tag: {
+						spiritName: "Ramirimed"
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: 7.0d
+			shape: "square"
+			description: [
+				"When put into the Dimensional Mineshaft, this Foliot will mine stone and ores from the mining dimension."
+				"Occultism miners have durability. If you want to keep the same miner, you'll need to find a way to take out and repair them before they break."
+			]
+			hide_dependency_lines: true
+			dependencies: ["0FEA5D5098563CAC"]
+			id: "008A4A3074DC0905"
+			tasks: [{
+				id: "05922B8517F1591F"
+				type: "item"
+				item: {
+					id: "occultism:miner_foliot_unspecialized"
+					Count: 1b
+					tag: {
+						spiritName: "Rayzoirder"
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "414676227485AD5E"
+				type: "item"
+				item: "occultism:magic_lamp_empty"
+			}]
+		}
+		{
+			title: "Deer Familiar"
+			x: 4.0d
+			y: 6.0d
+			shape: "square"
+			description: ["Grants Jump Boost to its summoner."]
+			hide_dependency_lines: true
+			dependencies: ["457C681DC673219D"]
+			id: "64F979594CC82CE6"
+			tasks: [{
+				id: "4FCE4D2C7CA293DE"
+				type: "advancement"
+				title: "Summon Deer Familiar"
+				icon: "occultism:spawn_egg/familiar_deer"
+				advancement: "occultism:occultism/familiar_deer"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Beaver Familiar"
+			x: 4.0d
+			y: 7.0d
+			shape: "square"
+			description: [
+				"Gives increased wood chopping speed to its summoner."
+				"Will automatically chop down nearby saplings as they grow into trees."
+			]
+			hide_dependency_lines: true
+			dependencies: ["457C681DC673219D"]
+			id: "17CBA436A8609B02"
+			tasks: [{
+				id: "6BB3C7F50573D8E3"
+				type: "advancement"
+				title: "Summon Beaver Familiar"
+				icon: "occultism:spawn_egg/familiar_beaver"
+				advancement: "occultism:occultism/familiar_beaver"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Greedy Familiar"
+			x: 5.0d
+			y: 6.5d
+			shape: "square"
+			description: ["Collects nearby items for its summoner."]
+			hide_dependency_lines: true
+			dependencies: ["457C681DC673219D"]
+			id: "7A587D9D7E43CB27"
+			tasks: [{
+				id: "539C6D7ED7140327"
+				type: "advancement"
+				title: "Summon Greedy Familiar"
+				icon: "occultism:spawn_egg/familiar_greedy"
+				advancement: "occultism:occultism/familiar_greedy"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Blacksmith Familiar"
+			x: 4.0d
+			y: 5.0d
+			shape: "square"
+			description: [
+				"Whenever its summoner picks up stone, the Blacksmith Familiar has a chance to repair their gear slightly."
+				"When given Iron Ingots, it can also upgrade other familiars, giving them additional effects. Refer to your Dictionary of Spirits."
+			]
+			hide_dependency_lines: true
+			dependencies: ["457C681DC673219D"]
+			id: "6C43CC9DC286316C"
+			tasks: [{
+				id: "7FBBB3298F59EDDE"
+				type: "advancement"
+				title: "Summon Blacksmith Familiar"
+				icon: "occultism:spawn_egg/familiar_blacksmith"
+				advancement: "occultism:occultism/familiar_blacksmith"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Parrot Familiar"
+			x: 5.0d
+			y: 5.5d
+			shape: "square"
+			description: ["Behaves like a normal parrot, tamed by its summoner."]
+			hide_dependency_lines: true
+			dependencies: ["457C681DC673219D"]
+			id: "258AF34E9AC76985"
+			tasks: [{
+				id: "1245A5FDAEB5AC10"
+				type: "advancement"
+				title: "Summon Parrot Familiar"
+				icon: "occultism:ritual_dummy/familiar_parrot"
+				advancement: "occultism:occultism/familiar_parrot"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Possessed Endermite"
+			x: 6.5d
+			y: 5.5d
+			shape: "square"
+			description: ["Drops Endstone."]
+			hide_dependency_lines: true
+			dependencies: ["457C681DC673219D"]
+			id: "6A7874A9F23C139D"
+			tasks: [{
+				id: "79DA16A457943054"
+				type: "kill"
+				title: "Kill Possessed Endermite"
+				icon: "occultism:spawn_egg/possessed_endermite"
+				entity: "occultism:possessed_endermite"
+				value: 1L
+			}]
+		}
+		{
+			title: "Possessed Skeleton"
+			x: 6.5d
+			y: 6.5d
+			shape: "square"
+			description: ["Guaranteed to drop a skull on death."]
+			hide_dependency_lines: true
+			dependencies: ["457C681DC673219D"]
+			id: "66102BEA8793DEA0"
+			tasks: [{
+				id: "10DEA47D25593376"
+				type: "kill"
+				title: "Kill Possessed Skeleton"
+				entity: "occultism:possessed_skeleton"
+				value: 1L
+			}]
+		}
+		{
+			x: -1.5d
+			y: 10.0d
+			hide_dependency_lines: false
+			dependencies: ["74FC4ECB5275A639"]
+			id: "728B2C692B9B6EB4"
+			tasks: [
+				{
+					id: "23AE28E24BF94522"
+					type: "item"
+					item: "occultism:book_of_binding_afrit"
+				}
+				{
+					id: "1B5298C559274088"
+					type: "item"
+					item: {
+						id: "occultism:book_of_binding_bound_afrit"
+						Count: 1b
+						tag: {
+							spiritName: "Barmeeure"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 6.5d
+			hide_dependency_lines: false
+			dependencies: ["457C681DC673219D"]
+			id: "21019E5E470B6D8A"
+			tasks: [
+				{
+					id: "6A7A7CDB026EA7B5"
+					type: "item"
+					item: "occultism:book_of_binding_djinni"
+				}
+				{
+					id: "6AC344ED64291783"
+					type: "item"
+					item: {
+						id: "occultism:book_of_binding_bound_djinni"
+						Count: 1b
+						tag: {
+							spiritName: "Zurarkder"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Possessed Enderman"
+			x: 3.0d
+			y: 8.5d
+			shape: "square"
+			description: ["Guaranteed to drop an Ender Pearl."]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "3028D0D465134EE5"
+			tasks: [{
+				id: "2FDAD8963DA9250B"
+				type: "kill"
+				title: "Kill Possessed Enderman"
+				entity: "occultism:possessed_enderman"
+				value: 1L
+			}]
+		}
+		{
+			title: "Possessed Ghast"
+			x: 4.0d
+			y: 8.5d
+			shape: "square"
+			subtitle: "A possessed demon?"
+			description: ["Guaranteed to drop a Ghast Tear."]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "3FA492756202F409"
+			tasks: [{
+				id: "7BE168B3F485ECA8"
+				type: "kill"
+				title: "Kill Possessed Ghast"
+				entity: "occultism:possessed_ghast"
+				value: 1L
+			}]
+		}
+		{
+			x: 7.5d
+			y: 10.0d
+			shape: "square"
+			description: ["Can hold a familiar inside it. Some familiars continue to provide their effects while inside."]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "27A95269797422E2"
+			tasks: [{
+				id: "4F8DE7A3F7010C1A"
+				type: "item"
+				item: {
+					id: "occultism:familiar_ring"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							hasFamiliar: 0b
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: 11.0d
+			shape: "square"
+			description: ["The only way to mine Iesnium is with an Infused or Iesnium Pickaxe, while wearing Otherworld Goggles."]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "1AFB4861089B7E04"
+			tasks: [{
+				id: "1DF6A74A0E4343D2"
+				type: "item"
+				item: {
+					id: "occultism:infused_pickaxe"
+					Count: 1b
+					tag: {
+						spiritName: "Mrokzoirzur"
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Soul Gem"
+			x: 6.5d
+			y: 11.0d
+			shape: "square"
+			description: ["Allows for easily carrying mobs around."]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "2D8EB933504F9735"
+			tasks: [{
+				id: "4C9C1D8BF76B0932"
+				type: "item"
+				item: {
+					id: "occultism:soul_gem"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: 10.0d
+			shape: "square"
+			description: ["A portal to a mining dimension. Too small for a player to fit through, but allows for spirits to collect resources for you."]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "7CB59F359AC7313E"
+			tasks: [{
+				id: "15D705F044D17C85"
+				type: "item"
+				item: "occultism:dimensional_mineshaft"
+			}]
+			rewards: [{
+				id: "28A04C608A3B3968"
+				type: "item"
+				item: "occultism:magic_lamp_empty"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 9.0d
+			shape: "square"
+			description: ["Mines for ores in the mining dimension. Works faster than the Miner Foliot."]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "59969CD1988C3243"
+			tasks: [{
+				id: "1D7D80F4E4E2249D"
+				type: "item"
+				item: {
+					id: "occultism:miner_djinni_ores"
+					Count: 1b
+					tag: {
+						spiritName: "Caurakaeus"
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: 9.0d
+			shape: "square"
+			dependencies: ["74FC4ECB5275A639"]
+			id: "6E534BD57C098FBE"
+			tasks: [{
+				id: "45E8E15C86487F71"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier2"
+			}]
+			rewards: [{
+				id: "0C08BE6D1D9E51B5"
+				type: "item"
+				item: "occultism:spirit_attuned_gem"
+			}]
+		}
+		{
+			icon: "occultism:spawn_egg/otherworld_bird"
+			x: 5.0d
+			y: 8.5d
+			shape: "square"
+			description: ["Grants limited flight abilities to its summoner."]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "25C627091B29206A"
+			tasks: [{
+				id: "036F059E92DDD39D"
+				type: "advancement"
+				title: "Drikwing Familiar"
+				icon: "occultism:spawn_egg/otherworld_bird"
+				advancement: "occultism:occultism/familiar_otherworld_bird"
+				criterion: ""
+			}]
+		}
+		{
+			x: 3.0d
+			y: 9.5d
+			shape: "square"
+			description: ["Grants Night Vision to its summoner."]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "30A12C6BE07FBC86"
+			tasks: [{
+				id: "408CD4B210833A3D"
+				type: "advancement"
+				title: "Bat Familiar"
+				icon: "occultism:spawn_egg/familiar_bat"
+				advancement: "occultism:occultism/familiar_bat"
+				criterion: ""
+			}]
+		}
+		{
+			x: 4.0d
+			y: 9.5d
+			shape: "square"
+			description: ["Provides Water Breathing to its summoner."]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "2D01B337F0D4027B"
+			tasks: [{
+				id: "0E6DDC73654F0B1A"
+				type: "advancement"
+				title: "Cthulhu Familiar"
+				icon: "occultism:spawn_egg/familiar_cthulhu"
+				advancement: "occultism:occultism/familiar_cthulhu"
+				criterion: ""
+			}]
+		}
+		{
+			x: 5.0d
+			y: 9.5d
+			shape: "square"
+			description: ["Provides Fire Resistance to its summoner."]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "0171F34D1D43B1D1"
+			tasks: [{
+				id: "0B94D77EBE8A11B3"
+				type: "advancement"
+				title: "Devil Familiar"
+				icon: "occultism:spawn_egg/familiar_devil"
+				advancement: "occultism:occultism/familiar_devil"
+				criterion: ""
+			}]
+		}
+		{
+			x: 4.0d
+			y: 10.5d
+			shape: "square"
+			description: ["Provides additional XP gain to its summoner."]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "79527BD3F1561D71"
+			tasks: [{
+				id: "35F95D142D706E37"
+				type: "advancement"
+				title: "Dragon Familiar"
+				icon: "occultism:spawn_egg/familiar_dragon"
+				advancement: "occultism:occultism/familiar_dragon"
+				criterion: ""
+			}]
+		}
+		{
+			x: 5.0d
+			y: 10.5d
+			shape: "square"
+			description: ["Steals the heads of nearby slain mobs and gives a buff against them to its summoner."]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "3953AD24C9BD6A50"
+			tasks: [{
+				id: "0BF7C4A1C760A5C2"
+				type: "advancement"
+				title: "Headless Ratman Familiar"
+				icon: "occultism:spawn_egg/familiar_headless"
+				advancement: "occultism:occultism/familiar_headless"
+				criterion: ""
+			}]
+		}
+		{
+			x: 3.0d
+			y: 10.5d
+			shape: "square"
+			description: [
+				"Can be fed to grow. Once large enough, it can be ridden."
+				"It can be used to obtain the Shub Niggurath familiar, see your Dictionary of Spirits."
+			]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "544CFA23E0A4EE8B"
+			tasks: [{
+				id: "0159D86D05A49693"
+				type: "advancement"
+				title: "Chimera Familiar"
+				icon: "occultism:spawn_egg/familiar_chimera"
+				advancement: "occultism:occultism/familiar_chimera"
+				criterion: ""
+			}]
+		}
+		{
+			x: 3.0d
+			y: 11.5d
+			shape: "square"
+			description: [
+				"Highlights nearby enemies with a glowing effect and shoots lasers at enemies."
+				"Eats Shub Niggurath babies to gain a buff."
+			]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "7FDD6D3986FDA634"
+			tasks: [{
+				id: "4C86F91E879E80E2"
+				type: "advancement"
+				title: "Beholder Familiar"
+				icon: "occultism:spawn_egg/familiar_beholder"
+				advancement: "occultism:occultism/familiar_beholder"
+				criterion: ""
+			}]
+		}
+		{
+			x: 4.0d
+			y: 11.5d
+			shape: "square"
+			description: ["Prevents other familiars from dying and leeches health from enemies for its summoner."]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "75226CC3C92F6FCD"
+			tasks: [{
+				id: "5517C0F6707D3BFF"
+				type: "advancement"
+				title: "Fairy Familiar"
+				icon: "occultism:spawn_egg/familiar_fairy"
+				advancement: "occultism:occultism/familiar_fairy"
+				criterion: ""
+			}]
+		}
+		{
+			x: 5.0d
+			y: 11.5d
+			shape: "square"
+			description: ["The Mummy Familiar is a martial arts expert and fights to protect its master."]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "685A54E343FBD98E"
+			tasks: [{
+				id: "51692F4B1C032969"
+				type: "advancement"
+				title: "Mummy Familiar"
+				icon: "occultism:spawn_egg/familiar_mummy"
+				advancement: "occultism:occultism/familiar_mummy"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Djinni Machine Operator"
+			x: 9.0d
+			y: 10.0d
+			shape: "square"
+			description: ["Crafts items in machines and returns the results to a Dimensional Storage Actuator."]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "3C1351DCFC209383"
+			tasks: [{
+				id: "6230CACD472B417F"
+				type: "item"
+				item: {
+					id: "occultism:book_of_calling_djinni_manage_machine"
+					Count: 1b
+					tag: {
+						spiritName: "Azakarcder"
+					}
+				}
+			}]
+			rewards: [{
+				id: "5E5B7A4DDF657B04"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 9.0d
+			shape: "square"
+			description: ["Crushes ores to triple them. Works faster than the Foliot Crusher and doesn't decay."]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "76003359FAA5E4EF"
+			tasks: [{
+				id: "212E5B03CA40E5A6"
+				type: "advancement"
+				title: "Djinni Crusher"
+				icon: "occultism:ritual_dummy/summon_djinni_crusher"
+				advancement: "occultism:occultism/summon_djinni_crusher"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "5CAD4D02E13A2966"
+				type: "item"
+				item: "emendatusenigmatica:iron_chunk"
+				count: 16
+			}]
+		}
+		{
+			title: "Sunshine Spirit"
+			x: 9.0d
+			y: 11.0d
+			shape: "square"
+			description: ["Calls forward clean weather."]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "533E93CD8A3F1424"
+			tasks: [{
+				id: "0A28A3D38E65A979"
+				type: "advancement"
+				title: "Sunshine Spirit"
+				icon: "occultism:ritual_dummy/summon_djinni_clear_weather"
+				advancement: "occultism:occultism/summon_djinni_clear_weather"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "7DE8F56967D54589"
+				type: "item"
+				item: "botania:teru_teru_bozu"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 9.5d
+			shape: "square"
+			description: ["Sets the time to high noon."]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "5139D8B0A981119D"
+			tasks: [{
+				id: "3A3EB6FF747E7968"
+				type: "advancement"
+				title: "Dawn Spirit"
+				icon: "occultism:ritual_dummy/summon_djinni_day_time"
+				advancement: "occultism:occultism/summon_djinni_day_time"
+				criterion: ""
+			}]
+		}
+		{
+			x: 10.0d
+			y: 10.5d
+			shape: "square"
+			description: ["Sets the time to midnight."]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "13A6AAA95DDC1DCE"
+			tasks: [{
+				id: "0C43442860B6F61B"
+				type: "advancement"
+				title: "Dusk Spirit"
+				icon: "occultism:ritual_dummy/summon_djinni_night_time"
+				advancement: "occultism:occultism/summon_djinni_night_time"
+				criterion: ""
+			}]
+		}
+		{
+			x: 1.5d
+			y: 11.5d
+			shape: "square"
+			dependencies: ["6E534BD57C098FBE"]
+			id: "6FBBF0E7CEA0F794"
+			tasks: [{
+				id: "1AF8B9B8A807921A"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier3"
+			}]
+			rewards: [{
+				id: "2868A3B09163FF00"
+				type: "item"
+				item: "occultism:spirit_attuned_crystal"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 10.0d
+			shape: "square"
+			description: ["To create Red Chalk, you'll need to summon and kill an unbound Afrit."]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "35AC379B0DE595F6"
+			tasks: [{
+				id: "125EAE3512CB949A"
+				type: "item"
+				item: "occultism:afrit_essence"
+			}]
+			rewards: [{
+				id: "1D20A1AA10B3644E"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 3s
+							id: "minecraft:looting"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			title: "The Wild Hunt"
+			x: 1.5d
+			y: 8.5d
+			shape: "square"
+			description: ["One of the best ways of obtaining Wither Skeleton Skulls is to summon the Wild Hunt, a group of spirits possessing skeletons and wither skeletons."]
+			dependencies: ["74FC4ECB5275A639"]
+			id: "382D95A351FF0591"
+			tasks: [{
+				id: "7C43557CE327A3B9"
+				type: "advancement"
+				title: "Summon The Wild Hunt"
+				icon: "minecraft:wither_skeleton_skull"
+				advancement: "occultism:occultism/summon_wild_hunt"
+				criterion: ""
+			}]
+		}
+		{
+			x: 1.5d
+			y: 13.0d
+			shape: "square"
+			dependencies: ["62A8453C6B6A8B93"]
+			id: "61D7D2E99047A4C9"
+			tasks: [{
+				id: "3A75EC498F5B52FE"
+				type: "advancement"
+				title: "Thunderstorm Spirit"
+				icon: "occultism:ritual_dummy/summon_afrit_thunder_weather"
+				advancement: "occultism:occultism/summon_afrit_thunder_weather"
+				criterion: ""
+			}]
+		}
+		{
+			x: 1.5d
+			y: 14.0d
+			shape: "square"
+			description: ["Crushes ores to quadruple them. Works faster than the Djinni and doesn't decay."]
+			dependencies: ["62A8453C6B6A8B93"]
+			id: "7C08D3302EA2024F"
+			tasks: [{
+				id: "6C490B696782999B"
+				type: "advancement"
+				title: "Afrit Crusher"
+				icon: "occultism:ritual_dummy/summon_afrit_crusher"
+				advancement: "occultism:occultism/summon_afrit_crusher"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "52BA38763B0E27E6"
+				type: "item"
+				item: "emendatusenigmatica:iron_chunk"
+				count: 16
+			}]
+		}
+		{
+			x: -1.5d
+			y: 14.0d
+			hide_dependency_lines: false
+			dependencies: ["62A8453C6B6A8B93"]
+			id: "349FAADD1AB64FBF"
+			tasks: [
+				{
+					id: "6063DDEFF7F85537"
+					type: "item"
+					item: "occultism:book_of_binding_marid"
+				}
+				{
+					id: "149B8FD0E5888E83"
+					type: "item"
+					item: {
+						id: "occultism:book_of_binding_bound_marid"
+						Count: 1b
+						tag: {
+							spiritName: "Mjolmizur"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 15.0d
+			shape: "square"
+			dependencies: ["62A8453C6B6A8B93"]
+			id: "02428D337D0EAB2B"
+			tasks: [{
+				id: "7D033B2E4DBC4C57"
+				type: "advancement"
+				title: "Rainy Weather Spirit"
+				icon: "occultism:ritual_dummy/summon_afrit_rain_weather"
+				advancement: "occultism:occultism/summon_afrit_rain_weather"
+				criterion: ""
+			}]
+		}
+		{
+			x: 3.0d
+			y: 14.0d
+			shape: "square"
+			description: ["Prevents its summoner from dying and loses a limb each time it does."]
+			dependencies: ["62A8453C6B6A8B93"]
+			id: "4109AE89A451BA62"
+			tasks: [{
+				id: "1372EB99E8B66480"
+				type: "advancement"
+				title: "Guardian Familiar"
+				icon: "occultism:spawn_egg/familiar_guardian"
+				advancement: "occultism:occultism/familiar_guardian"
+				criterion: ""
+			}]
+		}
+		{
+			x: 4.5d
+			y: 14.0d
+			shape: "square"
+			description: ["Crushes ores to sextuple them. Works faster than the Afrit and doesn't decay."]
+			dependencies: ["62A8453C6B6A8B93"]
+			id: "2BAA66B66AEC743C"
+			tasks: [{
+				id: "1D0A0132B21FC33F"
+				type: "advancement"
+				title: "Marid Crusher"
+				icon: "occultism:ritual_dummy/summon_marid_crusher"
+				advancement: "occultism:occultism/summon_marid_crusher"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "3B61B114EBC2A5B2"
+				type: "item"
+				item: "occultism:iesnium_ore"
+				count: 4
+			}]
+		}
+		{
+			x: 6.0d
+			y: 14.0d
+			shape: "square"
+			dependencies: [
+				"62A8453C6B6A8B93"
+				"6FBBF0E7CEA0F794"
+			]
+			id: "157799EEF9401143"
+			tasks: [{
+				id: "6EBBF8034D249CC2"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier4"
+			}]
+			rewards: [{
+				id: "0D474B2733EBB408"
+				type: "item"
+				item: {
+					id: "occultism:satchel"
+					Count: 1b
+					tag: {
+						spiritName: "Vemerion"
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: 12.5d
+			description: [
+				"Found in the Nether and only visible with Otherworld Goggles."
+				"Can be found using a Divination Rod. Check your Dictionary of Spirits."
+			]
+			hide_dependency_lines: false
+			dependencies: ["1AFB4861089B7E04"]
+			id: "06D01CF892619B1D"
+			tasks: [{
+				id: "139AFBAD0982E97D"
+				type: "item"
+				item: "occultism:iesnium_ore"
+			}]
+			rewards: [{
+				id: "781B2741E36B26E8"
+				type: "item"
+				item: "occultism:iesnium_ingot"
+				count: 2
+			}]
+		}
+	]
 }
